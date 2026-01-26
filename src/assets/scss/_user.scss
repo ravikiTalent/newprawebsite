@@ -1,0 +1,20 @@
+// Use this to write your custom SCSS
+.li-theme{
+    font-size: 1rem;
+    .offcanvas-nav{
+        color: #333333;
+    }
+    .nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+        color: #333333;
+        &:hover, &:focus{
+            color: #e77d00;
+        }
+    }
+    .swiper-hero, .swiper-hero .swiper-slide{
+        height: 600px !important;
+    }
+    table.shopping-cart td{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
