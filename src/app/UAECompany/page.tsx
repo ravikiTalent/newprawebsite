@@ -20,10 +20,10 @@ export default function UAECompany() {
           <div className="row">
             <div className="col-md-10 col-lg-8 col-xl-8 col-xxl-8 mx-auto">
               <h1 className="display-1 text-white mb-3">
-                UAE Business Registration
+                India Business Registration
               </h1>
               <p className="lead fs-lg px-md-3 px-lg-7 px-xl-9 px-xxl-10">
-                UAE Free-zone or Mainland Company with residence visa,
+                India Free-zone or Mainland Company with residence visa,
                 employment card and bank account opening.
               </p>
             </div>
@@ -37,7 +37,7 @@ export default function UAECompany() {
             <Breadcrumb
               data={[
                 { id: 1, title: "Home", url: "#" },
-                { id: 2, title: "UAE Business Registration", url: "" },
+                { id: 2, title: "India Business Registration", url: "" },
               ]}
             />
           </div>
@@ -68,9 +68,9 @@ export default function UAECompany() {
                     </div>
 
                     <div className="col-lg-8 ps-0">
-                      <h5 className="card-title">UAE Business Registration</h5>
+                      <h5 className="card-title">India Business Registration</h5>
                       <p>
-                        UAE Free-zone or Mainland Company with residence visa,
+                        India Free-zone or Mainland Company with residence visa,
                         employment card and bank account opening.
                       </p>
                       <div className="form-select-wrapper mb-4">

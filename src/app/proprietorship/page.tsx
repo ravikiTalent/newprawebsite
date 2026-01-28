@@ -1,14 +1,21 @@
-import { Fragment } from "react";
+"use client";
+import { Fragment, useState } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Breadcrumb from "components/reuseable/Breadcrumb";
 import { Pricing1 } from "components/blocks/pricing";
-import { cartList } from "data/cart-page";
+import { cartList as initialCartList } from "data/cart-page";
 import RegisterForm02 from "components/elements/forms/RegisterForm02";
 import CartListItem02 from "components/reuseable/CartListItem02";
 
 // CUSTOM DATA
 
 export default function Proprietorship() {
+  const [cartList, setCartList] = useState(initialCartList);
+
+  const handleDeleteItem = (itemId: string) => {
+    setCartList(cartList.filter(item => item.id !== itemId));
+  };
+
   return (
     <Fragment>
       {/* ========== page title section ========== */}
@@ -79,7 +86,11 @@ export default function Proprietorship() {
                     <table className="table text-center shopping-cart">
                       <tbody>
                         {cartList.map((item) => (
-                          <CartListItem02 key={item.id} {...item} />
+                          <CartListItem02 
+                            key={item.id} 
+                            {...item} 
+                            onDelete={handleDeleteItem}
+                          />
                         ))}
                     </tbody>
                     </table>

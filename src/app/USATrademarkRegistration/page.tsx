@@ -344,7 +344,9 @@ export default function USATrademarkRegistration() {
                   </ul>
                 </div>
               </div>
-              <h3 className="mt-4">United States Patent and Trademark Office (USPTO)</h3>
+              <h3 className="mt-4">
+                United States Patent and Trademark Office (USPTO)
+              </h3>
               <p>
                 Trademark regulations vary from country to country. In the
                 United States, trademark registration is handled by the United
@@ -593,12 +595,12 @@ export default function USATrademarkRegistration() {
                 Law.
               </p>
               <p>
-                Here at India Filings, we have a simplified process for
-                obtaining a trademark registration in the USA, with reasonable
-                USA trademark registration costs. LegallensIndia can connect
-                clients with experienced U.S. trademark attorneys who can
-                provide valuable legal guidance and assistance throughout the
-                trademark registration process.
+                Here at legallens india, we have a simplified process for obtaining a
+                trademark registration in the USA, with reasonable USA trademark
+                registration costs. LegallensIndia can connect clients with
+                experienced U.S. trademark attorneys who can provide valuable
+                legal guidance and assistance throughout the trademark
+                registration process.
               </p>
             </div>
           </div>

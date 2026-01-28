@@ -18,11 +18,12 @@ interface CartListItemProps {
   quantity: number;
   salePrice: number;
   regularPrice: number;
+  onDelete?: (id: string) => void;
 }
 // =============================================================
 
 export default function CartListItem02(props: CartListItemProps) {
-  const { id, title, image, size, color, salePrice, regularPrice } = props;
+  const { id, title, image, size, color, salePrice, regularPrice, onDelete } = props;
   const [quantity, setQuantity] = useState(1);
   // const { removeItem } = useShoppingCart();
 
@@ -36,6 +37,12 @@ export default function CartListItem02(props: CartListItemProps) {
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
+  };
+
+  const handleDelete = () => {
+    if (onDelete) {
+      onDelete(id);
+    }
   };
 
   // const removeItemFromCart = () => {
@@ -117,7 +124,14 @@ export default function CartListItem02(props: CartListItemProps) {
       </td>
 
       <td className="pe-0">
-        <NextLink title={<i className="uil uil-trash-alt" />} href="#" className="link-dark" />
+        <button 
+          onClick={handleDelete}
+          className="btn btn-link link-dark p-0 border-0"
+          style={{ textDecoration: 'none', cursor: 'pointer' }}
+          title="Delete item"
+        >
+          <i className="uil uil-trash-alt" />
+        </button>
       </td>
     </tr>
   );

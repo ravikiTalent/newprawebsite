@@ -14,6 +14,9 @@ import PenTool from "icons/solid-duo/PenTool";
 import Devices from "icons/solid-mono/Devices";
 import GlobeTwo from "icons/solid-mono/GlobeTwo";
 import Demo15 from "./demo-15/page";
+import LiveChatWidget from "components/LiveChatWidget";
+
+
 
 export default function Home() {
   return (
@@ -22,6 +25,7 @@ export default function Home() {
 
       <main className="content-wrapper">
         <Demo15 />
+        <LiveChatWidget service="India Business Registration" />
       </main>
     </Fragment>
   );
