@@ -6,7 +6,7 @@ import { Fragment, useState } from "react";
 import NextLink from "./links/NextLink";
 // CUSTOM UTILS LIBRARY FUNCTIONS
 import currency from "utils/currency";
-// import { useShoppingCart } from "use-shopping-cart";
+import { useCart } from "context/CartContext";
 
 // =============================================================
 interface CartListItemProps {
@@ -18,13 +18,13 @@ interface CartListItemProps {
   quantity: number;
   salePrice: number;
   regularPrice: number;
-  onDelete?: (id: string) => void;
 }
 // =============================================================
 
 export default function CartListItem02(props: CartListItemProps) {
-  const { id, title, image, size, color, salePrice, regularPrice, onDelete } = props;
-  const [quantity, setQuantity] = useState(1);
+  const { id, title, image, size, color, salePrice, regularPrice } = props;
+  const [quantity, setQuantity] = useState(props.quantity);
+  const { removeItem } = useCart();
   // const { removeItem } = useShoppingCart();
 
   const total = +quantity * (salePrice || regularPrice);
@@ -40,8 +40,8 @@ export default function CartListItem02(props: CartListItemProps) {
   };
 
   const handleDelete = () => {
-    if (onDelete) {
-      onDelete(id);
+    if (window.confirm('Are you sure you want to remove this item from the cart?')) {
+      removeItem(id);
     }
   };
 

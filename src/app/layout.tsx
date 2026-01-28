@@ -3,6 +3,8 @@ import type { PropsWithChildren } from "react";
 import { Manrope } from "next/font/google";
 
 import ThemeProvider from "theme/ThemeProvider";
+import { AuthProvider } from "context/AuthContext";
+import { CartProvider } from "context/CartContext";
 
 // ANIMATE CSS
 import "animate.css";
@@ -41,22 +43,26 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </head>
       <body className="{manrope.className}">
-        {/* ========== topbar section ========== */}
-        <Topbar />
-        {/* ========== header ========== */}
+        <AuthProvider>
+          <CartProvider>
+            {/* ========== topbar section ========== */}
+            <Topbar />
+            {/* ========== header ========== */}
 
-        <header className="wrapper bg-soft-primary">
-          <Navbar
-            info
-            search
-            cart
-            stickyBox={false}
-            logoAlt="logo-light"
-            navClassName="navbar navbar-expand-lg center-nav position-absolute navbar-dark caret-none"
-          />
-        </header>
-        <ThemeProvider>{children}</ThemeProvider>
-        <Footer9 />
+            <header className="wrapper bg-soft-primary">
+              <Navbar
+                info
+                search
+                cart
+                stickyBox={false}
+                logoAlt="logo-light"
+                navClassName="navbar navbar-expand-lg center-nav position-absolute navbar-dark caret-none"
+              />
+            </header>
+            <ThemeProvider>{children}</ThemeProvider>
+            <Footer9 />
+          </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

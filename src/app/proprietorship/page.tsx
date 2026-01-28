@@ -3,17 +3,64 @@ import { Fragment, useState } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Breadcrumb from "components/reuseable/Breadcrumb";
 import { Pricing1 } from "components/blocks/pricing";
-import { cartList as initialCartList } from "data/cart-page";
 import RegisterForm02 from "components/elements/forms/RegisterForm02";
 import CartListItem02 from "components/reuseable/CartListItem02";
+import LoginModal from "components/common/LoginModal";
+import { useCart } from "context/CartContext";
+import { useAuth } from "context/AuthContext";
 
 // CUSTOM DATA
+const proprietorshipProducts = [
+  {
+    id: '62f3bac114a90b9c05bce066',
+    title: 'Proprietorship',
+    image: '/img/photos/a3.jpg',
+    size: 43,
+    quantity: 1,
+    salePrice: 45,
+    color: 'GST Software & Registration',
+    regularPrice: 55,
+  },
+  {
+    id: '62f3bad7afb837063e6e3de6',
+    title: 'Proprietorship',
+    image: '/img/photos/a3.jpg',
+    size: 43,
+    quantity: 1,
+    salePrice: 0,
+    color: 'GST Filing & Registration - 6 Months',
+    regularPrice: 55,
+  },
+  {
+    id: '62f3bb3a8ee7c0fd2d072f52',
+    title: 'Proprietorship',
+    image: '/img/photos/a3.jpg',
+    quantity: 1,
+    salePrice: 0,
+    color: 'GST Filing & Registration - 12 Months',
+    regularPrice: 55,
+  }
+];
 
 export default function Proprietorship() {
-  const [cartList, setCartList] = useState(initialCartList);
+  const { cartList, addItem } = useCart();
+  const { user, isAuthenticated, logout } = useAuth();
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState('62f3bac114a90b9c05bce066');
 
-  const handleDeleteItem = (itemId: string) => {
-    setCartList(cartList.filter(item => item.id !== itemId));
+  const handleAddToCart = () => {
+    if (!isAuthenticated) {
+      setShowLoginModal(true);
+      return;
+    }
+    const product = proprietorshipProducts.find(p => p.id === selectedProduct);
+    if (product) {
+      addItem(product);
+    }
+  };
+
+  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedProduct(e.target.value);
   };
 
   return (
@@ -67,13 +114,25 @@ export default function Proprietorship() {
                           <h5 className="card-title">Proprietorship</h5>
                           <p>Assistance for GST registration with 1 year LEDGERS Accounting software license for Invoicing, GST E-invoicing and GST filing through LEDGERS.</p>
                           <div className="form-select-wrapper mb-4">
-                            <select id="GSTSelction" className="form-select" aria-label="Default select example">
-                              <option defaultValue={"GST Software & Registration"} value="1">GST Software & Registration</option>
-                              <option value="2">GST Filing & Registration - 6 Months</option>
-                              <option value="3">GST Filing & Registration - 12 Months</option>
+                            <select 
+                              id="GSTSelction" 
+                              className="form-select" 
+                              aria-label="Default select example"
+                              value={selectedProduct}
+                              onChange={handleServiceChange}
+                            >
+                              <option value="62f3bac114a90b9c05bce066">GST Software & Registration</option>
+                              <option value="62f3bad7afb837063e6e3de6">GST Filing & Registration - 6 Months</option>
+                              <option value="62f3bb3a8ee7c0fd2d072f52">GST Filing & Registration - 12 Months</option>
                             </select>
                           </div>
                           <Pricing1 roundShape />
+                          <button 
+                            onClick={handleAddToCart}
+                            className="btn btn-primary rounded mt-3"
+                          >
+                            ADD
+                          </button>
                     </div>
                   </div>
                 </div>
@@ -82,14 +141,41 @@ export default function Proprietorship() {
             <div className="col-lg-4 position-relative">
               <div className="card shadow-lg">
                 <div className="card-body p-4">
+                  {isAuthenticated ? (
+                    <div className="mb-3 p-3 bg-light rounded">
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div>
+                          <small className="text-muted">Logged in as</small>
+                          <h6 className="mb-0">{user?.name}</h6>
+                          <small className="text-muted">{user?.email}</small>
+                        </div>
+                        <button 
+                          onClick={logout}
+                          className="btn btn-sm btn-outline-danger"
+                        >
+                          Logout
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="mb-3 p-3 bg-light rounded text-center">
+                      <p className="mb-2">Please login to add items to cart</p>
+                      <button 
+                        onClick={() => setShowLoginModal(true)}
+                        className="btn btn-primary btn-sm"
+                      >
+                        Login / Register
+                      </button>
+                    </div>
+                  )}
+                  
                   <div className="py-4">
                     <table className="table text-center shopping-cart">
                       <tbody>
                         {cartList.map((item) => (
                           <CartListItem02 
                             key={item.id} 
-                            {...item} 
-                            onDelete={handleDeleteItem}
+                            {...item}
                           />
                         ))}
                     </tbody>
@@ -223,6 +309,12 @@ export default function Proprietorship() {
 
       {/* ========== contact section ========== */}
       {/* <Contact7 /> */}
+
+      {/* Login Modal */}
+      <LoginModal 
+        isOpen={showLoginModal} 
+        onClose={() => setShowLoginModal(false)} 
+      />
     </Fragment>
   );
 }
