@@ -22,7 +22,7 @@ export default function Hero18() {
                   </p>
 
                   <div style={slideInDownAnimate("1500ms")}>
-                    <NextLink title="Explore Now" href="#" className="btn btn-lg btn-gradient gradient-1 rounded" />
+                    <NextLink href="#" className="btn btn-lg btn-gradient gradient-1 rounded">Explore Now</NextLink>
                   </div>
                 </div>
 

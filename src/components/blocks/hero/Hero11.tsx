@@ -25,11 +25,11 @@ export default function Hero11() {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink title="Explore Now" href="#" className="btn btn-lg btn-white rounded-pill me-2" />
+                <NextLink href="#" className="btn btn-lg btn-white rounded-pill me-2">Explore Now</NextLink>
               </span>
 
               <span style={slideInDownAnimate("1500ms")}>
-                <NextLink title="Contact Us" href="#" className="btn btn-lg btn-outline-white rounded-pill" />
+                <NextLink href="#" className="btn btn-lg btn-outline-white rounded-pill">Contact Us</NextLink>
               </span>
             </div>
           </div>

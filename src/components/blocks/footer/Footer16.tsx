@@ -23,7 +23,7 @@ export default function Footer16() {
 
                 <div className="post-content">
                   <h6 className="mb-2">
-                    <NextLink title="Magna Mollis Ultricies" className="link-dark" href="#" />
+                    <NextLink className="link-dark" href="#">Magna Mollis Ultricies</NextLink>
                   </h6>
 
                   <ul className="post-meta">
@@ -44,7 +44,7 @@ export default function Footer16() {
 
                 <div className="post-content">
                   <h6 className="mb-2">
-                    <NextLink title="Ornare Nullam Risus" className="link-dark" href="#" />
+                    <NextLink className="link-dark" href="#">Ornare Nullam Risus</NextLink>
                   </h6>
 
                   <ul className="post-meta">
@@ -65,7 +65,7 @@ export default function Footer16() {
 
                 <div className="post-content">
                   <h6 className="mb-2">
-                    <NextLink title="Euismod Nullam Fusce" className="link-dark" href="#" />
+                    <NextLink className="link-dark" href="#">Euismod Nullam Fusce</NextLink>
                   </h6>
 
                   <ul className="post-meta">
@@ -85,7 +85,7 @@ export default function Footer16() {
               <ul className="list-unstyled tag-list">
                 {tags.map(({ id, title, url }) => (
                   <li key={id}>
-                    <NextLink title={title} href={url} className="btn btn-soft-ash text-white btn-sm rounded-pill" />
+                    <NextLink href={url} className="btn btn-soft-ash text-white btn-sm rounded-pill">{title}</NextLink>
                   </li>
                 ))}
               </ul>
@@ -96,7 +96,7 @@ export default function Footer16() {
               <ul className="unordered-list text-reset bullet-white ">
                 {categories.map(({ id, post, title, url }) => (
                   <li key={id}>
-                    <NextLink title={`${title} (${post})`} href={url} />
+                    <NextLink href={url}>{`${title} (${post})`}</NextLink>
                   </li>
                 ))}
               </ul>

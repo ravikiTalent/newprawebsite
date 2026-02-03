@@ -25,11 +25,11 @@ export default function Hero4() {
                 className="d-flex justify-content-center justify-content-lg-start"
                 style={slideInDownAnimate("900ms")}>
                 <span style={slideInDownAnimate("1200ms")}>
-                  <NextLink href="#" title="Explore Now" className="btn btn-lg btn-primary rounded-pill me-2" />
+                  <NextLink href="#" className="btn btn-lg btn-primary rounded-pill me-2">Explore Now</NextLink>
                 </span>
 
                 <span style={slideInDownAnimate("1500ms")}>
-                  <NextLink href="#" title="Contact Us" className="btn btn-lg btn-outline-primary rounded-pill" />
+                  <NextLink href="#" className="btn btn-lg btn-outline-primary rounded-pill">Contact Us</NextLink>
                 </span>
               </div>
             </div>

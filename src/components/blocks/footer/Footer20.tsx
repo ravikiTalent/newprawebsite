@@ -15,7 +15,7 @@ const widget = (list: Link[], title: string) => {
       <ul className="list-unstyled text-reset mb-0">
         {list.map(({ url, title, id }) => (
           <li key={id}>
-            <NextLink href={url} title={title} />
+            <NextLink href={url}>{title}</NextLink>
           </li>
         ))}
       </ul>
@@ -35,7 +35,7 @@ export default function Footer20() {
               We are trusted by over 5000+ clients. Join them now and grow your business.
             </h3>
 
-            <NextLink title="Join Us" href="#" className="btn btn-lg btn-white rounded-xl mb-0 text-nowrap" />
+            <NextLink href="#" className="btn btn-lg btn-white rounded-xl mb-0 text-nowrap">Join Us</NextLink>
           </div>
         </div>
 

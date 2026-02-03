@@ -30,11 +30,11 @@ export default function Hero2() {
 
         <div className="d-flex justify-content-center justify-content-lg-start">
           <span style={slideInDownAnimate("1200ms")}>
-            <NextLink title="Explore Now" href="#" className="btn btn-lg btn-primary rounded-pill me-2" />
+            <NextLink href="#" className="btn btn-lg btn-primary rounded-pill me-2">Explore Now</NextLink>
           </span>
 
           <span style={slideInDownAnimate("1500ms")}>
-            <NextLink title="Free Trial" href="#" className="btn btn-lg btn-outline-primary rounded-pill" />
+            <NextLink href="#" className="btn btn-lg btn-outline-primary rounded-pill">Free Trial</NextLink>
           </span>
         </div>
       </div>

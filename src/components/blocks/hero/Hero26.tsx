@@ -17,11 +17,11 @@ export default function Hero26() {
             </p>
 
             <div className="d-inline-flex me-2">
-              <NextLink href="#" title="Try it for Free" className="btn btn-lg btn-grape rounded" />
+              <NextLink href="#" className="btn btn-lg btn-grape rounded">Try it for Free</NextLink>
             </div>
 
             <div className="d-inline-flex">
-              <NextLink href="#" title="Explore Now" className="btn btn-lg btn-outline-grape rounded" />
+              <NextLink href="#" className="btn btn-lg btn-outline-grape rounded">Explore Now</NextLink>
             </div>
           </div>
 

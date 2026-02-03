@@ -13,7 +13,7 @@ export default function Contact9() {
               We are trusted by over 5000+ clients. Join them by using our services and grow your business.
             </h3>
 
-            <NextLink href="#" title="Join Us" className="btn btn-white rounded-pill mb-0 text-nowrap" />
+            <NextLink href="#" className="btn btn-white rounded-pill mb-0 text-nowrap">Join Us</NextLink>
           </div>
         </div>
       </div>

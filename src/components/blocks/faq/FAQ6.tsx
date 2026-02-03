@@ -17,7 +17,7 @@ export default function FAQ6() {
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam
               quis risus eget urna mollis ornare.
             </p>
-            <NextLink title="All FAQ" href="#" className="btn btn-primary rounded-pill" />
+            <NextLink href="#" className="btn btn-primary rounded-pill">All FAQ</NextLink>
           </div>
 
           <div className="col-lg-6">

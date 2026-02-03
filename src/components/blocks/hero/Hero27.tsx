@@ -21,7 +21,7 @@ export default function Hero27() {
             </p>
 
             <div style={{ opacity: "1" }}>
-              <NextLink title="Read More" href="#" className="btn btn-lg btn-primary rounded" />
+              <NextLink href="#" className="btn btn-lg btn-primary rounded">Read More</NextLink>
             </div>
           </div>
         </div>

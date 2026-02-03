@@ -32,7 +32,7 @@ export default function Footer5() {
               <address className="pe-xl-15 pe-xxl-17">
                 Moonshine St. 14/05 Light City, London, United Kingdom
               </address>
-              <NextLink title="info@email.com" href="mailto:#" />
+              <NextLink href="mailto:#">info@email.com</NextLink>
               <br /> 00 (123) 456 78 90
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function Footer5() {
               <ul className="list-unstyled  mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
-                    <NextLink title={title} href={url} />
+                    <NextLink href={url}>{title}</NextLink>
                   </li>
                 ))}
               </ul>

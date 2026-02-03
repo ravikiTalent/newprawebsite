@@ -28,7 +28,7 @@ export default function Footer9() {
               <ul className="list-unstyled  mb-0">
                 {helps.map(({ title, url }) => (
                   <li key={title}>
-                    <NextLink title={title} href={url} />
+                    <NextLink href={url}>{title}</NextLink>
                   </li>
                 ))}
               </ul>
@@ -41,7 +41,7 @@ export default function Footer9() {
               <ul className="list-unstyled  mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
-                    <NextLink title={title} href={url} />
+                    <NextLink href={url}>{title}</NextLink>
                   </li>
                 ))}
               </ul>
@@ -52,7 +52,7 @@ export default function Footer9() {
             <div className="widget">
               <h4 className="widget-title mb-3 text-white">Get in Touch</h4>
               <address>Hyderabd St. 14/05 Light City</address>
-              <NextLink title="legallens@gmail.com" href="mailto:#" />
+              <NextLink href="mailto:#">legallens@gmail.com</NextLink>
               <br /> 00 (123) 456 78 90
             </div>
           </div>

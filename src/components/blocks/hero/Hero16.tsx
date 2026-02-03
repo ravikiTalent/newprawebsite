@@ -48,11 +48,11 @@ export default function Hero16() {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink title="See My Works" href="#" className="btn btn-lg btn-primary rounded-pill me-2" />
+                <NextLink href="#" className="btn btn-lg btn-primary rounded-pill me-2">See My Works</NextLink>
               </span>
 
               <span style={slideInDownAnimate("1500ms")}>
-                <NextLink title="Contact Me" href="#" className="btn btn-lg btn-outline-primary rounded-pill" />
+                <NextLink href="#" className="btn btn-lg btn-outline-primary rounded-pill">Contact Me</NextLink>
               </span>
             </div>
           </div>

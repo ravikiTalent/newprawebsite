@@ -17,7 +17,7 @@ export default function Hero10() {
             </p>
 
             <div style={slideInDownAnimate("600ms")}>
-              <NextLink title="Read More" href="#" className="btn btn-lg btn-primary rounded mb-5" />
+              <NextLink href="#" className="btn btn-lg btn-primary rounded mb-5">Read More</NextLink>
             </div>
           </div>
         </div>

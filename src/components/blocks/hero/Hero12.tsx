@@ -18,11 +18,11 @@ export default function Hero12() {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink href="#" title="See Projects" className="btn btn-primary rounded me-2" />
+                <NextLink href="#" className="btn btn-primary rounded me-2">See Projects</NextLink>
               </span>
 
               <span style={slideInDownAnimate("1500ms")}>
-                <NextLink href="#" title="Learn More" className="btn btn-yellow rounded" />
+                <NextLink href="#" className="btn btn-yellow rounded">Learn More</NextLink>
               </span>
             </div>
           </div>

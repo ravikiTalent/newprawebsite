@@ -37,7 +37,7 @@ export default function Footer21() {
               <ul className="list-unstyled text-reset mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
-                    <NextLink title={title} href={url} />
+                    <NextLink href={url}>{title}</NextLink>
                   </li>
                 ))}
               </ul>

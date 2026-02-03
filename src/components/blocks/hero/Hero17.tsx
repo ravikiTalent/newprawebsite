@@ -18,11 +18,11 @@ export default function Hero17() {
 
             <div className="d-flex justify-content-center mb-5 mb-md-0">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink title="Explore Now" href="#" className="btn btn-lg btn-primary rounded-pill me-2" />
+                <NextLink href="#" className="btn btn-lg btn-primary rounded-pill me-2">Explore Now</NextLink>
               </span>
 
               <span style={slideInDownAnimate("1500ms")}>
-                <NextLink title="Contact Us" href="#" className="btn btn-lg btn-outline-primary rounded-pill" />
+                <NextLink href="#" className="btn btn-lg btn-outline-primary rounded-pill">Contact Us</NextLink>
               </span>
             </div>
           </div>

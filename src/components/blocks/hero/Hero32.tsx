@@ -27,7 +27,7 @@ export default function Hero32() {
               data-group="page-title-buttons"
               className="d-flex justify-content-center mb-4">
               <span>
-                <NextLink title="Explore Now" href="#" className="btn btn-lg btn-white" />
+                <NextLink href="#" className="btn btn-lg btn-white">Explore Now</NextLink>
               </span>
             </div>
           </div>

@@ -14,7 +14,7 @@ export default function Footer13() {
             Join our community by using our services and grow your business.
           </h3>
 
-          <NextLink href="#" title="Try It For Free" className="btn btn-primary rounded-pill mb-0 text-nowrap" />
+          <NextLink href="#" className="btn btn-primary rounded-pill mb-0 text-nowrap">Try It For Free</NextLink>
         </div>
 
         <hr className="mt-11 mb-12" />
@@ -37,7 +37,7 @@ export default function Footer13() {
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
               <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <NextLink title="info@email.com" href="mailto:#" />
+              <NextLink href="mailto:#">info@email.com</NextLink>
               <br /> 00 (123) 456 78 90
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Footer13() {
               <ul className="list-unstyled  mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
-                    <NextLink title={title} href={url} />
+                    <NextLink href={url}>{title}</NextLink>
                   </li>
                 ))}
               </ul>

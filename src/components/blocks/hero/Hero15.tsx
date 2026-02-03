@@ -25,7 +25,7 @@ export default function Hero15() {
                   </p>
 
                   <div className="animate__animated animate__slideInUp animate__delay-3s">
-                    <NextLink title="Read More" href="#" className="btn btn-lg btn-outline-white rounded-pill" />
+                    <NextLink href="#" className="btn btn-lg btn-outline-white rounded-pill">Read More</NextLink>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function Hero15() {
                   </p>
 
                   <div className="animate__animated animate__slideInUp animate__delay-3s">
-                    <NextLink title="Contact Us" href="#" className="btn btn-lg btn-outline-white rounded-pill" />
+                    <NextLink href="#" className="btn btn-lg btn-outline-white rounded-pill">Contact Us</NextLink>
                   </div>
                 </div>
               </div>

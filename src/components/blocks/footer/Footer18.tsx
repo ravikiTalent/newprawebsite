@@ -12,7 +12,7 @@ export default function Footer18() {
             Join our community by using our services and grow your business.
           </h3>
 
-          <NextLink title="Try It For Free" href="#" className="btn btn-lg btn-primary rounded mb-0 text-nowrap" />
+          <NextLink href="#" className="btn btn-lg btn-primary rounded mb-0 text-nowrap">Try It For Free</NextLink>
         </div>
 
         <hr className="mt-11 mb-12" />
@@ -47,7 +47,7 @@ export default function Footer18() {
               <ul className="list-unstyled text-reset mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
-                    <NextLink title={title} href={url} />
+                    <NextLink href={url}>{title}</NextLink>
                   </li>
                 ))}
               </ul>

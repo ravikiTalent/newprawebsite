@@ -18,7 +18,7 @@ export default function Footer3({ hiddenNewsletter }: Footer3Props) {
         <ul className="list-unstyled text-reset mb-0">
           {list.map(({ url, title, id }) => (
             <li key={id}>
-              <NextLink href={url} title={title} />
+              <NextLink href={url}>{title}</NextLink>
             </li>
           ))}
         </ul>
@@ -101,7 +101,7 @@ export default function Footer3({ hiddenNewsletter }: Footer3Props) {
                 Lets make something great together. We are trusted by over 5000+ clients. Join them by using our
                 services and grow your business.
               </p>
-              <NextLink title="Join Us" href="#" className="btn  btn-primary rounded-pill" />
+              <NextLink href="#" className="btn  btn-primary rounded-pill">Join Us</NextLink>
             </div>
           </div>
 
