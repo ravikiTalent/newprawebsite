@@ -41,11 +41,11 @@ export default function Blog5() {
                     <div className="card-body p-6">
                       <div className="post-header">
                         <div className="post-category">
-                          <NextLink title={item.category} href="#" className="hover" />
+                          <NextLink href="#" className="hover">{item.category}</NextLink>
                         </div>
 
                         <h2 className="post-title h3 mt-1 mb-3">
-                          <NextLink title={item.title} href={item.link} className="link-dark" />
+                          <NextLink href={item.link} className="link-dark">{item.title}</NextLink>
                         </h2>
                       </div>
 

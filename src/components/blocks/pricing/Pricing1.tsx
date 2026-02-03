@@ -13,10 +13,16 @@ interface Pricing1Props {
   bulletBg?: boolean;
   roundShape?: boolean;
   roundedButton?: boolean;
+  selectedPackage?: {
+    id: string;
+    name: string;
+    title: string;
+    image: string;
+  };
 }
 // =============================================================
 
-export default function Pricing1({ bulletBg, roundShape = false, roundedButton = false }: Pricing1Props) {
+export default function Pricing1({ bulletBg, roundShape = false, roundedButton = false, selectedPackage }: Pricing1Props) {
   const [activeYearly, setActiveYearly] = useState(false);
 
   return (
@@ -56,7 +62,15 @@ export default function Pricing1({ bulletBg, roundShape = false, roundedButton =
 
           {pricingList1.map((item, i) => (
             <div className={`col-md-6 ${i === 1 && ""}`} key={i}>
-              <PricingCard1 bulletBg={bulletBg} {...item} activeYearly={activeYearly} roundedButton={roundedButton} />
+              <PricingCard1 
+                bulletBg={bulletBg} 
+                {...item} 
+                activeYearly={activeYearly} 
+                roundedButton={roundedButton}
+                productId={selectedPackage?.id}
+                productImage={selectedPackage?.image}
+                productTitle={selectedPackage?.title}
+              />
             </div>
           ))}
         </div>

@@ -102,9 +102,9 @@ export default function Shapes() {
         <h2 className="mb-3">Solid</h2>
         <p className="lead mb-8">
           All background color options (
-          <NextLink title="solid" href="/background" className="internal" />,{" "}
-          <NextLink title="soft" href="/background" className="internal" />,{" "}
-          <NextLink title="pale" href="/background" className="internal" />) are available to use.
+          <NextLink href="/background" className="internal">solid</NextLink>,{" "}
+          <NextLink href="/background" className="internal">soft</NextLink>,{" "}
+          <NextLink href="/background" className="internal">pale</NextLink>) are available to use.
         </p>
 
         <div className="card">

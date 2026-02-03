@@ -17,7 +17,7 @@ export default function ProjectDetails() {
           stickyBox={false}
           logoAlt="logo-light"
           navClassName="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark"
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-white rounded-pill" />}
+          button={<NextLink href="#" className="btn btn-sm btn-white rounded-pill">Contact</NextLink>}
         />
       </header>
 
@@ -31,7 +31,7 @@ export default function ProjectDetails() {
               <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div className="post-header">
                   <div className="post-category text-line text-white">
-                    <NextLink title="Identity" href="#" className="text-reset" />
+                    <NextLink href="#" className="text-reset">Identity</NextLink>
                   </div>
 
                   <h1 className="display-1 mb-3 text-white">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>

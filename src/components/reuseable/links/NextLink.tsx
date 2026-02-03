@@ -3,11 +3,11 @@ import { ReactNode } from "react";
 
 // ==============================================================
 interface NextLinkProps extends LinkProps {
-  title: ReactNode;
+  children: ReactNode;
   className?: string;
 }
 // ==============================================================
 
-export default function NextLink({ title, ...props }: NextLinkProps) {
-  return <Link {...props}>{title}</Link>;
+export default function NextLink({ children, ...props }: NextLinkProps) {
+  return <Link {...props}>{children}</Link>;
 }

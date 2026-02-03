@@ -3,11 +3,11 @@
 import { FormEvent, Fragment, useState } from "react";
 import NextLink from "components/reuseable/links/NextLink";
 import Signup from "components/blocks/navbar/components/signup";
-import { sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { auth, googleProvider } from "api/firebase";
+import { useAuth } from "context/AuthContext";
 import Forgotpassword from "components/blocks/navbar/components/forgotpassword";
 
-export default function LoginForm() {  //{ onLogin }
+export default function LoginForm() {
+  const { login } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [visiblePassword, setVisiblePassword] = useState(false);
@@ -34,46 +34,20 @@ export default function LoginForm() {  //{ onLogin }
     document.querySelectorAll(".modal-open").forEach(el => el.classList.add("overflow-y-auto", "p-0"));
 }
 
-  const handleLogin = async (e:FormEvent<HTMLFormElement>) => {
+  const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      // alert("Logged in successfully!");
+    const success = await login(email, password);
+    if (success) {
+      setMessage("Logged in successfully!");
+      setError("");
       // handleCloseModal();
-      // onLogin();
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message);
-      }
+    } else {
+      setError("Invalid email or password.");
+      setMessage("");
     }
   };
 
-  const handleGoogleLogin = async () => {
-    try {
-      await signInWithPopup(auth, googleProvider);
-      // alert("Logged in with Google 🎉");
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message);
-      }
-    }
-  };
-
-  const handleForgotPassword = async () => {
-    if (!email) {
-      setError("Please enter your EmailId.");
-      return;
-    }
-    try {
-      await sendPasswordResetEmail(auth, email);
-      setMessage("Password reset email sent! Check your Email 📩");
-      //setError(null);
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message);
-      }
-    }
-  };
+  // Remove Google login and forgot password logic for local-only auth
 
   return (
     <Fragment>
@@ -118,7 +92,7 @@ export default function LoginForm() {  //{ onLogin }
       </form>
 
       <p className="mb-1">
-        <NextLink title="Forgot Password?" href="#" className="hover" onClick={handleForgotPassword} /> 
+        <NextLink title="Forgot Password?" href="#" className="hover" />
       </p>{/* onClick={handleForgotPassword} */}
       {/* data-bs-toggle="modal" data-bs-target="#modal-forgotpassword" */}
 
@@ -129,7 +103,7 @@ export default function LoginForm() {  //{ onLogin }
       <div className="divider-icon my-4">or</div>
 
       <nav className="nav social justify-content-center text-center">
-        <a href="#" className="btn btn-circle btn-sm btn-google" onClick={handleGoogleLogin} data-bs-dismiss="modal">
+        <a href="#" className="btn btn-circle btn-sm btn-google" data-bs-dismiss="modal">
           <i className="uil uil-google" />
         </a>
 

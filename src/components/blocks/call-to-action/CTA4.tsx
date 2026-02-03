@@ -14,7 +14,7 @@ export default function CTA4() {
               business.
             </h3>
 
-            <NextLink href="#" title="Join Us" className="btn btn-white rounded mb-0 text-nowrap" />
+            <NextLink href="#" className="btn btn-white rounded mb-0 text-nowrap">Join Us</NextLink>
           </div>
         </div>
       </div>

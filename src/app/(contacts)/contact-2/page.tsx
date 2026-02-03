@@ -20,7 +20,7 @@ export default function ContactTwo() {
       <header className="wrapper bg-soft-primary">
         <Navbar
           language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+          button={<NextLink href="#" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
         />
       </header>
 

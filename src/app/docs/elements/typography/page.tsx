@@ -380,21 +380,21 @@ export default function Typography() {
 
         <div className="card">
           <div className="card-body">
-            <NextLink title="Link example" href="#" className="hover link-body me-4 ms-1 mb-5" />
-            <NextLink title="Link example" href="#" className="hover me-4 mb-5" />
-            <NextLink title="Link example" href="#" className="hover more me-4 mb-5" />
+            <NextLink href="#" className="hover link-body me-4 ms-1 mb-5">Link example</NextLink>
+            <NextLink href="#" className="hover me-4 mb-5">Link example</NextLink>
+            <NextLink href="#" className="hover more me-4 mb-5">Link example</NextLink>
 
             <br />
 
-            <NextLink title="Link example" href="#" className="hover-2 link-body me-4 mb-5" />
-            <NextLink title="Link example" href="#" className="hover-2 me-4 mb-5" />
-            <NextLink title="Link example" href="#" className="hover-2 more me-4 mb-5" />
+            <NextLink href="#" className="hover-2 link-body me-4 mb-5">Link example</NextLink>
+            <NextLink href="#" className="hover-2 me-4 mb-5">Link example</NextLink>
+            <NextLink href="#" className="hover-2 more me-4 mb-5">Link example</NextLink>
 
             <br />
 
-            <NextLink title="Link example" href="#" className="hover-3 link-body me-4" />
-            <NextLink title="Link example" href="#" className="hover-3 me-4" />
-            <NextLink title="Link example" href="#" className="hover-3 more me-4" />
+            <NextLink href="#" className="hover-3 link-body me-4">Link example</NextLink>
+            <NextLink href="#" className="hover-3 me-4">Link example</NextLink>
+            <NextLink href="#" className="hover-3 more me-4">Link example</NextLink>
           </div>
 
           <div className="card-footer position-relative">

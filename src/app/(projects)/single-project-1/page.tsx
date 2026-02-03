@@ -21,7 +21,7 @@ export default function ProjectDetails() {
       <header className="wrapper bg-soft-primary">
         <Navbar
           language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+          button={<NextLink href="#" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
         />
       </header>
 
@@ -32,7 +32,7 @@ export default function ProjectDetails() {
               <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div className="post-header">
                   <div className="post-category text-line">
-                    <NextLink title="Identity" href="#" className="hover" />
+                    <NextLink href="#" className="hover">Identity</NextLink>
                   </div>
 
                   <h1 className="display-1 mb-3">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>

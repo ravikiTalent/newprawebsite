@@ -17,7 +17,7 @@ export default function CareerTwo() {
             <div className="col-lg-8 mx-auto mb-5">
               <h2 className="fs-15 text-uppercase text-muted mb-3">Join Our Team</h2>
               <h3 className="display-1 mb-6">Join our team to help shape the future of development.</h3>
-              <NextLink title="Explore Positions" href="#" className="btn btn-lg btn-primary rounded-pill" />
+              <NextLink href="#" className="btn btn-lg btn-primary rounded-pill">Explore Positions</NextLink>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function CareerTwo() {
               <h3 className="display-4 mb-7 px-lg-5 px-xl-0 px-xxl-5">
                 We are a community with 5000+ team members. Join and build the future with us.
               </h3>
-              <NextLink title="Contact Us" href="#" className="btn btn-lg btn-primary rounded-pill" />
+              <NextLink href="#" className="btn btn-lg btn-primary rounded-pill">Contact Us</NextLink>
             </div>
           </div>
         </div>

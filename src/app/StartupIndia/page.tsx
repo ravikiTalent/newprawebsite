@@ -1,14 +1,47 @@
-import { Fragment } from "react";
+"use client";
+import { Fragment, useState } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Breadcrumb from "components/reuseable/Breadcrumb";
 import { Pricing1 } from "components/blocks/pricing";
-import { cartList } from "data/cart-page";
 import RegisterForm02 from "components/elements/forms/RegisterForm02";
 import CartListItem02 from "components/reuseable/CartListItem02";
+// CART CONTEXT
+import { useCart } from "context/CartContext";
 
-// CUSTOM DATA
+// Product packages
+const productPackages = [
+  {
+    id: "gst-software-registration",
+    name: "GST Software & Registration",
+    title: "Proprietorship",
+    image: "/img/photos/a3.jpg",
+  },
+  {
+    id: "gst-filing-6-months",
+    name: "GST Filing & Registration - 6 Months",
+    title: "Proprietorship",
+    image: "/img/photos/a3.jpg",
+  },
+  {
+    id: "gst-filing-12-months",
+    name: "GST Filing & Registration - 12 Months",
+    title: "Proprietorship",
+    image: "/img/photos/a3.jpg",
+  },
+];
 
 export default function StartupIndia() {
+  const [selectedPackage, setSelectedPackage] = useState(productPackages[0]);
+  const { cartList } = useCart();
+
+  const handlePackageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const packageId = e.target.value;
+    const selected = productPackages.find((pkg) => pkg.id === packageId);
+    if (selected) {
+      setSelectedPackage(selected);
+    }
+  };
+
   return (
     <Fragment>
       {/* ========== page title section ========== */}
@@ -78,23 +111,21 @@ export default function StartupIndia() {
                         <select
                           id="GSTSelction"
                           className="form-select"
-                          aria-label="Default select example"
+                          aria-label="Select package"
+                          value={selectedPackage.id}
+                          onChange={handlePackageChange}
                         >
-                          <option
-                            defaultValue={"GST Software & Registration"}
-                            value="1"
-                          >
-                            GST Software & Registration
-                          </option>
-                          <option value="2">
-                            GST Filing & Registration - 6 Months
-                          </option>
-                          <option value="3">
-                            GST Filing & Registration - 12 Months
-                          </option>
+                          {productPackages.map((pkg) => (
+                            <option key={pkg.id} value={pkg.id}>
+                              {pkg.name}
+                            </option>
+                          ))}
                         </select>
                       </div>
-                      <Pricing1 roundShape />
+                      <Pricing1 
+                        roundShape 
+                        selectedPackage={selectedPackage}
+                      />
                     </div>
                   </div>
                 </div>
@@ -106,13 +137,21 @@ export default function StartupIndia() {
                   <div className="py-4">
                     <table className="table text-center shopping-cart">
                       <tbody>
-                        {cartList.map((item) => (
-                          <CartListItem02 key={item.id} {...item} />
-                        ))}
+                        {cartList.length > 0 ? (
+                          cartList.map((item) => (
+                            <CartListItem02 key={item.id} {...item} />
+                          ))
+                        ) : (
+                          <tr>
+                            <td className="text-center py-4">
+                              <p className="text-muted">Your cart is empty</p>
+                            </td>
+                          </tr>
+                        )}
                       </tbody>
                     </table>
                   </div>
-                  <h5 className="card-title">Proprietorship</h5>
+                  <h5 className="card-title">{selectedPackage.title}</h5>
                   <RegisterForm02 />
                 </div>
               </div>

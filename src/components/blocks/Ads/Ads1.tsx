@@ -30,7 +30,7 @@ export default function Ads1() {
               eu leo. Maecenas faucibus mollis elit interdum. Duis mollis, est non commodo luctus.
             </p>
 
-            <NextLink title="Learn More" href="#" className="more link-white hover" />
+            <NextLink href="#" className="more link-white hover">Learn More</NextLink>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Contact2() {
             condimentum nibh, ut fermentum massa justo sit amet risus.
           </p>
 
-          <NextLink title="Join Us" href="#" className="btn btn-primary rounded-pill mt-2" />
+          <NextLink href="#" className="btn btn-primary rounded-pill mt-2">Join Us</NextLink>
         </div>
       </div>
     </div>

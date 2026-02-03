@@ -38,7 +38,7 @@ export default function About32() {
       </div>
 
       <div className="text-center">
-        <NextLink title="More Details" href="#" className="btn btn-primary" />
+        <NextLink href="#" className="btn btn-primary">More Details</NextLink>
       </div>
     </Fragment>
   );

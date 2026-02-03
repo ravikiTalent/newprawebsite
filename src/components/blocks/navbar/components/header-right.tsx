@@ -1,7 +1,9 @@
+"use client";
 import { ReactNode } from "react";
 // -------- PARTIAL LOCAL COMPONENTS -------- //
 import Social from "./social";
 import Language from "./language";
+import { useCart } from "context/CartContext";
 
 // ===================================================================
 interface HeaderRightProps {
@@ -16,6 +18,8 @@ interface HeaderRightProps {
 // ===================================================================
 
 export default function HeaderRight({ info, cart, button, social, search, language, navOtherClass }: HeaderRightProps) {
+  const { cartList } = useCart();
+  
   return (
     <div className={navOtherClass}>
       <ul className="navbar-nav flex-row align-items-center ms-auto">
@@ -51,7 +55,9 @@ export default function HeaderRight({ info, cart, button, social, search, langua
               data-bs-target="#offcanvas-cart"
               className="nav-link position-relative d-flex flex-row align-items-center">
               <i className="uil uil-shopping-cart" />
-              <span className="badge badge-cart bg-primary">3</span>
+              {cartList.length > 0 && (
+                <span className="badge badge-cart bg-primary">{cartList.length}</span>
+              )}
             </a>
           </li>
         ) : null}

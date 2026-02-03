@@ -17,7 +17,7 @@ export default function Contact13() {
           interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
           sit amet risus.
         </p>
-        <NextLink title="Join Us" href="#" className="btn btn-primary rounded mt-2" />
+        <NextLink href="#" className="btn btn-primary rounded mt-2">Join Us</NextLink>
       </div>
     </div>
   );

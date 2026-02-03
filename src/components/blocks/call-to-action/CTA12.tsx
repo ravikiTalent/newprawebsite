@@ -14,7 +14,7 @@ export default function CTA12() {
           by over 5000+ clients. Join them now and grow your business.
         </h3>
 
-        <NextLink title="Join Us" href="#" className="btn btn-white" />
+        <NextLink href="#" className="btn btn-white">Join Us</NextLink>
       </div>
     </div>
   );

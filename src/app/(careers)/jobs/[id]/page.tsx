@@ -103,7 +103,7 @@ export default async function JobDetails({ params }: Props) {
             </div>
 
             <div className="col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0">
-              <NextLink title="Explore Positions" href="#" className="btn btn-primary rounded-pill mb-0" />
+              <NextLink href="#" className="btn btn-primary rounded-pill mb-0">Explore Positions</NextLink>
             </div>
           </div>
 

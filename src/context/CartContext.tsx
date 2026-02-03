@@ -17,6 +17,7 @@ interface CartContextType {
   cartList: CartItem[];
   addItem: (item: CartItem) => void;
   removeItem: (itemId: string) => void;
+  updateQuantity: (itemId: string, quantity: number) => void;
   clearCart: () => void;
 }
 
@@ -48,31 +49,50 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [cartList, user]);
 
   const addItem = (item: CartItem) => {
-    if (!isAuthenticated) {
+    if (!user) {
+      console.log("No user logged in, showing alert");
       alert("Please login to add items to cart");
       return;
     }
+
+    console.log("User logged in:", user);
+    console.log("Adding item to cart:", item);
 
     setCartList((prevList) => {
       // Check if item already exists
       const existingItem = prevList.find((cartItem) => cartItem.id === item.id);
       
       if (existingItem) {
-        // If exists, increase quantity
+        console.log("Item exists, updating quantity");
+        // If exists, update with new quantity
         return prevList.map((cartItem) =>
           cartItem.id === item.id
-            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            ? { ...cartItem, quantity: item.quantity }
             : cartItem
         );
       }
       
+      console.log("Adding new item");
       // Add new item
       return [...prevList, item];
     });
   };
 
+  const updateQuantity = (itemId: string, quantity: number) => {
+    if (!user) {
+      alert("Please login to manage cart");
+      return;
+    }
+
+    setCartList((prevList) =>
+      prevList.map((item) =>
+        item.id === itemId ? { ...item, quantity } : item
+      )
+    );
+  };
+
   const removeItem = (itemId: string) => {
-    if (!isAuthenticated) {
+    if (!user) {
       alert("Please login to manage cart");
       return;
     }
@@ -87,7 +107,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <CartContext.Provider value={{ cartList, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{ cartList, addItem, removeItem, updateQuantity, clearCart }}>
       {children}
     </CartContext.Provider>
   );

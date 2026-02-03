@@ -10,7 +10,10 @@ import { Contact7 } from "components/blocks/contact";
 import { CTA5 } from "components/blocks/call-to-action";
 import { Testimonial5 } from "components/blocks/testimonial";
 import { Services1 } from "components/blocks/services";
+import StartBusinessIndiaSection from "components/blocks/home/StartBusinessIndiaSection";
+import ComplianceSolutionSection from "components/blocks/home/ComplianceSolutionSection";
 import NextLink from "components/reuseable/links/NextLink";
+import ReadyToGetStartedSection from "components/blocks/home/ReadyToGetStartedSection";
 
 
 export default function Demo15() {
@@ -19,8 +22,8 @@ export default function Demo15() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero sections ========== */}
-        <Hero15 />
 
+        <Hero15 />
         <Services1 />
 
         <section className="pt-12 pb-5">
@@ -35,14 +38,18 @@ export default function Demo15() {
                         <tbody>
                           <tr>
                             <td>
-                              <NextLink title="Link example" href="#" className="hover me-4 mb-5" />
-                              <span className="mb-0 d-block">Published On: <strong>01012025</strong></span>
+                              <NextLink href="#" className="hover me-4 mb-5">Link example</NextLink>
+                              <span className="mb-0 d-block">
+                                Published On: <strong>01012025</strong>
+                              </span>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <NextLink title="Link example" href="#" className="hover me-4 mb-5" />
-                              <span className="mb-0 d-block">Published On: <strong>01012025</strong></span>
+                              <NextLink href="#" className="hover me-4 mb-5">Link example</NextLink>
+                              <span className="mb-0 d-block">
+                                Published On: <strong>01012025</strong>
+                              </span>
                             </td>
                           </tr>
                         </tbody>
@@ -60,14 +67,22 @@ export default function Demo15() {
                         <tbody>
                           <tr>
                             <td>
-                              <p className="m-0">GSTR 1 (Monthly) for Aug 2025</p>
-                              <span className="mb-0 d-block">Due Date: <strong>01012025</strong></span>
+                              <p className="m-0">
+                                GSTR 1 (Monthly) for Aug 2025
+                              </p>
+                              <span className="mb-0 d-block">
+                                Due Date: <strong>01012025</strong>
+                              </span>
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <p className="m-0">GSTR 1 (Monthly) for Aug 2025</p>
-                              <span className="mb-0 d-block">Due Date: <strong>01012025</strong></span>
+                              <p className="m-0">
+                                GSTR 1 (Monthly) for Aug 2025
+                              </p>
+                              <span className="mb-0 d-block">
+                                Due Date: <strong>01012025</strong>
+                              </span>
                             </td>
                           </tr>
                         </tbody>
@@ -79,15 +94,16 @@ export default function Demo15() {
             </div>
           </div>
         </section>
-
+        <StartBusinessIndiaSection />
+        <ComplianceSolutionSection />
         {/* <section className="wrapper bg-light angled lower-end">
           <div className="container py-14 py-md-16"> */}
-            {/* ========== about section ========== */}
-            {/* <About6 /> */}
+        {/* ========== about section ========== */}
+        {/* <About6 /> */}
 
-            {/* ========== process section ========== */}
-            {/* <Process7 /> */}
-          {/* </div>
+        {/* ========== process section ========== */}
+        {/* <Process7 /> */}
+        {/* </div>
         </section> */}
 
         {/* ========== testimonial section ========== */}
@@ -104,6 +120,8 @@ export default function Demo15() {
 
         {/* ========== call to action section ========== */}
         {/* <CTA5 /> */}
+
+        <ReadyToGetStartedSection />
       </main>
 
       {/* ========== footer section ========== */}

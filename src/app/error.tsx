@@ -20,8 +20,8 @@ export default function NotFound({ error, reset }: Props) {
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+          language         
+          button={<NextLink href="#" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
         />
       </header>
 
@@ -40,7 +40,7 @@ export default function NotFound({ error, reset }: Props) {
                   homepage with the button below.
                 </p>
 
-                <NextLink href="/" title="Go to Homepage" className="btn btn-primary rounded-pill" />
+                <NextLink href="/" className="btn btn-primary rounded-pill">Go to Homepage</NextLink>
               </div>
             </div>
           </div>

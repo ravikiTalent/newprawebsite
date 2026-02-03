@@ -15,8 +15,8 @@ export default function CTA2() {
         </div>
 
         <div className="d-flex justify-content-center">
-          <NextLink href="#" title="Get Started" className="btn btn-primary rounded mx-1" />
-          <NextLink href="#" title="Free Trial" className="btn btn-green rounded mx-1" />
+          <NextLink href="#" className="btn btn-primary rounded mx-1">Get Started</NextLink>
+          <NextLink href="#" className="btn btn-green rounded mx-1">Free Trial</NextLink>
         </div>
       </div>
     </section>

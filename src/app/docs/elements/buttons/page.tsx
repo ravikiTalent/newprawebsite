@@ -51,35 +51,35 @@ export default function Buttons() {
         <h2 className="mb-5">Colors</h2>
         <div className="card">
           <div className="card-body">
-            <NextLink title="Button" href="#" className="btn btn-yellow rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-orange rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-pink rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-violet rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-purple rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-blue rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-aqua rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-leaf rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-fuchsia rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-sky rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-grape rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-navy rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-ash rounded-pill mb-2 me-1" />
+            <NextLink href="#" className="btn btn-yellow rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-orange rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-pink rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-violet rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-purple rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-blue rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-aqua rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-leaf rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-fuchsia rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-sky rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-grape rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-navy rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-ash rounded-pill mb-2 me-1">Button</NextLink>
 
             <br className="d-none d-lg-block" />
 
-            <NextLink title="Button" href="#" className="btn btn-soft-yellow rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-orange rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-pink rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-violet rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-purple rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-blue rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-aqua rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-leaf rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-fuchsia rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-sky rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-grape rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-navy rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-soft-ash rounded-pill mb-2 me-1" />
+            <NextLink href="#" className="btn btn-soft-yellow rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-orange rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-pink rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-violet rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-purple rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-blue rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-aqua rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-leaf rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-fuchsia rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-sky rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-grape rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-navy rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-soft-ash rounded-pill mb-2 me-1">Button</NextLink>
           </div>
 
           <div className="card-footer position-relative">
@@ -103,49 +103,21 @@ export default function Buttons() {
         <h2 className="mb-5">Gradients</h2>
         <div className="card">
           <div className="card-body">
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-1 rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-2 rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-3 rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-4 rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-5 rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-6 rounded-pill mb-2 me-1" />
-            <NextLink title="Button" href="#" className="btn btn-gradient gradient-7 rounded-pill mb-2 me-1" />
+            <NextLink href="#" className="btn btn-gradient gradient-1 rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-gradient gradient-2 rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-gradient gradient-3 rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-gradient gradient-4 rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-gradient gradient-5 rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-gradient gradient-6 rounded-pill mb-2 me-1">Button</NextLink>
+            <NextLink href="#" className="btn btn-gradient gradient-7 rounded-pill mb-2 me-1">Button</NextLink>
             <br className="d-none d-lg-block" />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-1 rounded-pill mb-2 me-1"
-            />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-2 rounded-pill mb-2 me-1"
-            />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-3 rounded-pill mb-2 me-1"
-            />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-4 rounded-pill mb-2 me-1"
-            />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-5 rounded-pill mb-2 me-1"
-            />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-6 rounded-pill mb-2 me-1"
-            />
-            <NextLink
-              href="#"
-              title={<span>Button</span>}
-              className="btn btn-outline-gradient gradient-7 rounded-pill mb-2 me-1"
-            />
+            <NextLink href="#" className="btn btn-outline-gradient gradient-1 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-2 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-3 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-4 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-5 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-6 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-7 rounded-pill mb-2 me-1"><span>Button</span></NextLink>
           </div>
 
           <div className="card-footer position-relative">
@@ -169,9 +141,9 @@ export default function Buttons() {
         <h2 className="mb-5">Sizes</h2>
         <div className="card">
           <div className="card-body">
-            <NextLink title="Large Button" href="#" className="btn btn-primary btn-lg rounded-pill me-1 mb-2 mb-md-0" />
-            <NextLink title="Default Button" href="#" className="btn btn-primary rounded-pill me-1 mb-2 mb-md-0" />
-            <NextLink title="Small Button" href="#" className="btn btn-primary btn-sm rounded-pill me-1 mb-2 mb-md-0" />
+            <NextLink href="#" className="btn btn-primary btn-lg rounded-pill me-1 mb-2 mb-md-0">Large Button</NextLink>
+            <NextLink href="#" className="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Default Button</NextLink>
+            <NextLink href="#" className="btn btn-primary btn-sm rounded-pill me-1 mb-2 mb-md-0">Small Button</NextLink>
           </div>
 
           <div className="card-footer position-relative">
@@ -195,9 +167,9 @@ export default function Buttons() {
         <h2 className="mb-5">Shapes</h2>
         <div className="card">
           <div className="card-body">
-            <NextLink title="Square" href="#" className="btn btn-primary rounded-0 me-1 mb-2 mb-md-0" />
-            <NextLink title="Rounded" href="#" className="btn btn-primary me-1 mb-2 mb-md-0" />
-            <NextLink title="Pill" href="#" className="btn btn-primary rounded-pill me-1 mb-2 mb-md-0" />
+            <NextLink href="#" className="btn btn-primary rounded-0 me-1 mb-2 mb-md-0">Square</NextLink>
+            <NextLink href="#" className="btn btn-primary me-1 mb-2 mb-md-0">Rounded</NextLink>
+            <NextLink href="#" className="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Pill</NextLink>
           </div>
 
           <div className="card-footer position-relative">
@@ -221,21 +193,12 @@ export default function Buttons() {
         <h2 className="mb-5">Style</h2>
         <div className="card">
           <div className="card-body">
-            <NextLink title="Solid" href="#" className="btn btn-primary rounded-pill me-1 mb-2 mb-md-0" />
-            <NextLink title="Soft" href="#" className="btn btn-soft-primary rounded-pill me-1 mb-2 mb-md-0" />
-            <NextLink href="#" title="Outline" className="btn btn-outline-primary rounded-pill me-1 mb-2 mb-md-0" />
+            <NextLink href="#" className="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Solid</NextLink>
+            <NextLink href="#" className="btn btn-soft-primary rounded-pill me-1 mb-2 mb-md-0">Soft</NextLink>
+            <NextLink href="#" className="btn btn-outline-primary rounded-pill me-1 mb-2 mb-md-0">Outline</NextLink>
 
-            <NextLink
-              href="#"
-              title="Gradient"
-              className="btn btn-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0"
-            />
-
-            <NextLink
-              href="#"
-              title={<span>Outline Gradient</span>}
-              className="btn btn-outline-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0"
-            />
+            <NextLink href="#" className="btn btn-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0">Gradient</NextLink>
+            <NextLink href="#" className="btn btn-outline-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0"><span>Outline Gradient</span></NextLink>
           </div>
 
           <div className="card-footer position-relative">
@@ -259,106 +222,23 @@ export default function Buttons() {
         <h2 className="mb-5">Circle</h2>
         <div className="card">
           <div className="card-body">
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-primary btn-lg me-2 mb-2"
-            />
+            <NextLink href="#" className="btn btn-circle btn-primary btn-lg me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-primary me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-primary btn-sm me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-soft-primary btn-lg me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-soft-primary me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-soft-primary btn-sm me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-outline-primary btn-lg me-2 mb-2"><i className="uil uil-check" /></NextLink>
 
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-primary me-2 mb-2"
-            />
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-primary btn-sm me-2 mb-2"
-            />
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-soft-primary btn-lg me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-soft-primary me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-soft-primary btn-sm me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-outline-primary btn-lg me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-outline-primary me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-outline-primary btn-sm me-2 mb-2"
-            />
-
+            <NextLink href="#" className="btn btn-circle btn-outline-primary me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-outline-primary btn-sm me-2 mb-2"><i className="uil uil-check" /></NextLink>
             <br className="d-none d-lg-block" />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-gradient gradient-1 btn-lg me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-gradient gradient-1 me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              title={<i className="uil uil-check" />}
-              className="btn btn-circle btn-gradient gradient-1 btn-sm me-2 mb-2"
-            />
-
-            <NextLink
-              href="#"
-              className="btn btn-circle btn-outline-gradient gradient-1 btn-lg me-2 mb-2"
-              title={
-                <span>
-                  <i className="uil uil-check" />
-                </span>
-              }
-            />
-
-            <NextLink
-              href="#"
-              className="btn btn-circle btn-outline-gradient gradient-1 me-2 mb-2"
-              title={
-                <span>
-                  <i className="uil uil-check" />
-                </span>
-              }
-            />
-            <NextLink
-              href="#"
-              className="btn btn-circle btn-outline-gradient gradient-1 btn-sm me-2 mb-2"
-              title={
-                <span>
-                  <i className="uil uil-check" />
-                </span>
-              }
-            />
+            <NextLink href="#" className="btn btn-circle btn-gradient gradient-1 btn-lg me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-gradient gradient-1 me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-gradient gradient-1 btn-sm me-2 mb-2"><i className="uil uil-check" /></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-outline-gradient gradient-1 btn-lg me-2 mb-2"><span><i className="uil uil-check" /></span></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-outline-gradient gradient-1 me-2 mb-2"><span><i className="uil uil-check" /></span></NextLink>
+            <NextLink href="#" className="btn btn-circle btn-outline-gradient gradient-1 btn-sm me-2 mb-2"><span><i className="uil uil-check" /></span></NextLink>
           </div>
 
           <div className="card-footer position-relative">

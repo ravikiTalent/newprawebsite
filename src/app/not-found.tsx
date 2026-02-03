@@ -14,7 +14,7 @@ export default function NotFound() {
       <header className="wrapper bg-light">
         <Navbar
           language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+          button={<NextLink href="#" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
         />
       </header>
 
@@ -35,7 +35,7 @@ export default function NotFound() {
                   homepage with the button below.
                 </p>
 
-                <NextLink title="Go to Homepage" href="/" className="btn btn-primary rounded-pill" />
+                <NextLink href="/" className="btn btn-primary rounded-pill">Go to Homepage</NextLink>
               </div>
             </div>
           </div>

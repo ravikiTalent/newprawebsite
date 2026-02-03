@@ -39,7 +39,7 @@ export default function BlockLayout({ children }: PropsWithChildren) {
         <header className="wrapper bg-soft-primary">
           <Navbar
             language
-            button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+            button={<NextLink href="#" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
           />
         </header>
 
@@ -66,12 +66,13 @@ export default function BlockLayout({ children }: PropsWithChildren) {
                 <li className="list-inline-item me-1 mb-2" key={id}>
                   <NextLink
                     href={url}
-                    title={title}
                     className={clsx({
                       "btn btn-soft-ash btn-sm rounded": true,
                       "text-primary pe-none": pathname === url
                     })}
-                  />
+                  >
+                    {title}
+                  </NextLink>
                 </li>
               ))}
             </ul>

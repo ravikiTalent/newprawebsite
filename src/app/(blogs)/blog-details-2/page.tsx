@@ -16,7 +16,7 @@ export default function BlogDetailsTwo() {
           stickyBox={false}
           logoAlt="logo-light"
           navClassName="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark"
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-white rounded-pill" />}
+          button={<NextLink href="#" className="btn btn-sm btn-white rounded-pill">Contact</NextLink>}
         />
       </header>
 
@@ -30,7 +30,7 @@ export default function BlogDetailsTwo() {
               <div className="col-md-10 col-xl-8 mx-auto">
                 <div className="post-header">
                   <div className="post-category text-line text-white">
-                    <NextLink title="Teamwork" href="#" className="text-reset" />
+                    <NextLink href="#" className="text-reset">Teamwork</NextLink>
                   </div>
 
                   <h1 className="display-1 mb-4 text-white">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
@@ -42,33 +42,25 @@ export default function BlogDetailsTwo() {
 
                     <li className="post-author">
                       <i className="uil uil-user" />
-                      <NextLink href="#" className="text-reset" title={<span>By Sandbox</span>} />
+                      <NextLink href="#" className="text-reset"><span>By Sandbox</span></NextLink>
                     </li>
 
                     <li className="post-comments">
                       <i className="uil uil-comment" />
-                      <NextLink
-                        href="#"
-                        className="text-reset"
-                        title={
-                          <Fragment>
-                            3 <span>Comments</span>
-                          </Fragment>
-                        }
-                      />
+                      <NextLink href="#" className="text-reset">
+                        <Fragment>
+                          3 <span>Comments</span>
+                        </Fragment>
+                      </NextLink>
                     </li>
 
                     <li className="post-likes">
                       <i className="uil uil-heart-alt" />
-                      <NextLink
-                        href="#"
-                        className="text-reset"
-                        title={
-                          <Fragment>
-                            3 <span>Likes</span>
-                          </Fragment>
-                        }
-                      />
+                      <NextLink href="#" className="text-reset">
+                        <Fragment>
+                          3 <span>Likes</span>
+                        </Fragment>
+                      </NextLink>
                     </li>
                   </ul>
                 </div>

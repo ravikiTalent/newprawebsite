@@ -1,6 +1,9 @@
+"use client";
 import clsx from "clsx";
 import Price from "./Price";
 import NextLink from "../links/NextLink";
+import { useCart } from "context/CartContext";
+import { useAuth } from "context/AuthContext";
 
 // ================================================================
 interface PricingCard1Props {
@@ -11,14 +14,43 @@ interface PricingCard1Props {
   monthlyPrice: number;
   activeYearly: boolean;
   roundedButton?: boolean;
+  productId?: string;
+  productImage?: string;
+  productTitle?: string;
+  onAdd?: () => void;
 }
 // ================================================================
 
 export default function PricingCard1(props: PricingCard1Props) {
-  const { planName, features, yearlyPrice, monthlyPrice, activeYearly, roundedButton, bulletBg } = props;
+  const { planName, features, yearlyPrice, monthlyPrice, activeYearly, roundedButton, bulletBg, productId, productImage, productTitle, onAdd } = props;
+  const { addItem } = useCart();
+  const { user } = useAuth();
 
   const yearClasses = activeYearly ? "price-show" : "price-hide price-hidden";
   const monthClasses = !activeYearly ? "price-show" : "price-hide price-hidden";
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (!user) {
+      alert("Please login to add items to cart");
+      return;
+    }
+    if (onAdd) {
+      onAdd();
+      return;
+    }
+    // Default add to cart logic
+    const cartItem = {
+      id: productId || `product-${planName}-${Date.now()}`,
+      title: productTitle || planName,
+      image: productImage || "/img/photos/a3.jpg",
+      salePrice: activeYearly ? yearlyPrice : monthlyPrice,
+      regularPrice: activeYearly ? yearlyPrice : monthlyPrice,
+      quantity: 1,
+      color: planName
+    };
+    addItem(cartItem);
+  };
 
   return (
     <div className="pricing card shadow-lg h-100">
@@ -41,11 +73,14 @@ export default function PricingCard1(props: PricingCard1Props) {
           ))}
         </ul>
 
-        <NextLink
-          href="#"
-          title="ADD"
-          className={`btn btn-primary ${roundedButton ? "rounded" : "rounded-pill"}`}
-        />
+        <button
+          onClick={handleAddToCart}
+          className={`btn btn-primary ${roundedButton ? "rounded" : "rounded-pill"} w-100`}
+          disabled={!user}
+          title={!user ? "Login required to add to cart" : "Add to cart"}
+        >
+          ADD
+        </button>
       </div>
     </div>
   );

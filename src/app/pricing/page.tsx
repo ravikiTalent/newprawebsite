@@ -21,7 +21,7 @@ export default function Pricing() {
       <header className="wrapper bg-soft-primary">
         <Navbar
           language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+          button={<NextLink href="#" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
         />
       </header>
 
@@ -57,7 +57,7 @@ export default function Pricing() {
                     <div>
                       <h4>{title}</h4>
                       <p className="mb-2">{description}</p>
-                      <NextLink title="Learn More" href={linkUrl} className="more hover" />
+                      <NextLink href={linkUrl} className="more hover">Learn More</NextLink>
                     </div>
                   </div>
                 </div>
