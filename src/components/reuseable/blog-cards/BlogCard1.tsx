@@ -39,16 +39,10 @@ export default function BlogCard1({ date, image, title, category }: BlogCard1Pro
           </li>
 
           <li className="post-comments">
-            <NextLink
-              href="#"
-              className="link-dark"
-              title={
-                <>
-                  <i className="uil uil-file-alt fs-15" />
-                  {category}
-                </>
-              }
-            />
+            <NextLink href="#" className="link-dark">
+              <i className="uil uil-file-alt fs-15" />
+              {category}
+            </NextLink>
           </li>
         </ul>
       </div>

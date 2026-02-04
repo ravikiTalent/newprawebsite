@@ -18,7 +18,9 @@ export default function Process12() {
           lacinia bibendum consectetur.
         </p>
 
-        <NextLink href="#" title="Learn More" className="btn btn-primary rounded-pill mb-0" />
+        <NextLink href="#" className="btn btn-primary rounded-pill mb-0">
+          Learn More
+        </NextLink>
       </div>
 
       <div className="col-lg-6">

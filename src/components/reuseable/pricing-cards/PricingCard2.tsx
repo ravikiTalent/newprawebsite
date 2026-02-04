@@ -44,9 +44,10 @@ export default function PricingCard2(props: PricingCard2Props) {
 
         <NextLink
           href="#"
-          title="Choose Plan"
           className={`btn btn-primary ${roundedButton ? "rounded" : "rounded-pill"}`}
-        />
+        >
+          Choose Plan
+        </NextLink>
       </div>
     </div>
   );

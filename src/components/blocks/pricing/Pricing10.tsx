@@ -49,13 +49,13 @@ export default function Pricing10() {
 
                   <NextLink
                     href="#"
-                    title="Choose Plan"
                     className={clsx({
                       "btn rounded": true,
                       "btn-primary": plan === "Corporate",
                       "btn-soft-primary": plan !== "Corporate"
-                    })}
-                  />
+                    })}>
+                    Choose Plan
+                  </NextLink>
                 </div>
               </div>
             </div>

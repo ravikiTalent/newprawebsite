@@ -50,25 +50,13 @@ export default function ReviewCard({ createdAt, actions, user, review }: ReviewC
         <p className="text-muted fs-15 mb-0 me-5">Was this review helpful?</p>
 
         <div>
-          <NextLink
-            href="#"
-            className="link-dark me-3"
-            title={
-              <>
-                <i className="uil uil-thumbs-up" /> {actions.like}
-              </>
-            }
-          />
+          <NextLink href="#" className="link-dark me-3">
+            <i className="uil uil-thumbs-up" /> {actions.like}
+          </NextLink>
 
-          <NextLink
-            href="#"
-            className="link-dark"
-            title={
-              <>
-                <i className="uil uil-thumbs-down" /> {actions.dislike}
-              </>
-            }
-          />
+          <NextLink href="#" className="link-dark">
+            <i className="uil uil-thumbs-down" /> {actions.dislike}
+          </NextLink>
         </div>
       </div>
     </li>

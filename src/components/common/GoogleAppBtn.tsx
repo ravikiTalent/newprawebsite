@@ -10,24 +10,22 @@ export default function GoogleAppBtn() {
         <NextLink
           href="#"
           className="btn btn-primary btn-icon btn-icon-start rounded me-2"
-          title={
-            <Fragment>
-              <i className="uil uil-apple" /> App Store
-            </Fragment>
-          }
-        />
+        >
+          <Fragment>
+            <i className="uil uil-apple" /> App Store
+          </Fragment>
+        </NextLink>
       </span>
 
       <span style={slideInDownAnimate("1500ms")}>
         <NextLink
           href="#"
           className="btn btn-green btn-icon btn-icon-start rounded"
-          title={
-            <Fragment>
-              <i className="uil uil-google-play" /> Google Play
-            </Fragment>
-          }
-        />
+        >
+          <Fragment>
+            <i className="uil uil-google-play" /> Google Play
+          </Fragment>
+        </NextLink>
       </span>
     </div>
   );

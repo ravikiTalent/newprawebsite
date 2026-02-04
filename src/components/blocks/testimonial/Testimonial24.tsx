@@ -50,7 +50,9 @@ export default function Testimonial24() {
           felis euismod.
         </p>
 
-        <NextLink href="#" title="All Testimonials" className="btn btn-primary rounded-xl mt-3" />
+        <NextLink href="#" className="btn btn-primary rounded-xl mt-3">
+          All Testimonials
+        </NextLink>
       </div>
     </div>
   );
