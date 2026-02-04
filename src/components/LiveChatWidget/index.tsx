@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './liveChatWidget.module.css';
+import styles from './LiveChatWidget.module.css';
 
 interface FormData {
   name: string;
