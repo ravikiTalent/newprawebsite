@@ -18,7 +18,7 @@ export default function ListItemLink({
 }: ListItemLinkProps) {
   return (
     <li className={liClassName}>
-      <NextLink className={linkClassName} href={href} title={title} />
+      <NextLink className={linkClassName} href={href}>{title}</NextLink>
     </li>
   );
 }

@@ -35,7 +35,7 @@ export default function BlogCard4(props: BlogCard4Props) {
         <div className="card-body">
           <div className="post-header">
             <h2 className="post-title h3 mt-1 mb-3">
-              <NextLink title={title} className="link-dark" href="#" />
+              <NextLink className="link-dark" href="#">{title}</NextLink>
             </h2>
           </div>
 

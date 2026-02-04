@@ -30,7 +30,7 @@ export default function ProjectCard3({ link, title, image, category, fullImage }
       <div className="project-details d-flex justify-content-center flex-column">
         <div className="post-header">
           <h2 className="post-title h3">
-            <NextLink href={link} title={title} className="link-dark" />
+            <NextLink href={link} className="link-dark">{title}</NextLink>
           </h2>
 
           <div className="post-category text-ash">{category}</div>

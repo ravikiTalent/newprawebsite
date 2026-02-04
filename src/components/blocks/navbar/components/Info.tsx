@@ -26,7 +26,11 @@ export default function Info({
   ];
 
   return (
-    <div className="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+    <div
+      className="offcanvas offcanvas-end text-inverse"
+      id="offcanvas-info"
+      data-bs-scroll="true"
+    >
       <div className="offcanvas-header">
         <h3 className="text-white fs-30 mb-0">{title}</h3>
         <button
@@ -51,9 +55,12 @@ export default function Info({
               Moonshine St. 14/05 <br /> Light City, London
             </address>
           )}
-          <NextLink title="info@email.com" className="link-inverse" href="mailto:first.last@email.com" />
+          <NextLink className="link-inverse" href="mailto:first.last@email.com">
+            info@email.com
+          </NextLink>
           <br />
-          <NextLink href="tel:0123456789" title={phone!} />
+          <NextLink href="tel:0123456789">{phone}</NextLink>
+          
         </div>
 
         <div className="widget mb-8">
@@ -61,7 +68,7 @@ export default function Info({
           <ul className="list-unstyled">
             {otherPages.map((item) => (
               <li key={item.title}>
-                <NextLink href="#" title={item.title} />
+                <NextLink href={item.url}>{item.title}</NextLink>
               </li>
             ))}
           </ul>

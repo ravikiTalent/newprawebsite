@@ -20,7 +20,9 @@ export default function Team2() {
           ac, vestibulum at eros tempus porttitor.
         </p>
 
-        <NextLink title="See All Members" href="#" className="btn btn-primary rounded-pill mt-3" />
+        <NextLink href="#" className="btn btn-primary rounded-pill mt-3">
+          See All Members
+        </NextLink>
       </div>
 
       <div className="col-lg-8">

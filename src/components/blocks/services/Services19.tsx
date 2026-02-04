@@ -20,7 +20,7 @@ export default function Services19() {
             <IconBox className={`icon btn btn-block btn-lg btn-soft-${color} pe-none mb-5`} icon={icon} />
             <h4>{title}</h4>
             <p className="mb-3">{description}</p>
-            <NextLink title="Learn More" href={linkUrl} className={`more hover link-${color}`} />
+            <NextLink href={linkUrl} className={`more hover link-${color}`}>Learn More</NextLink>
           </div>
         ))}
       </div>

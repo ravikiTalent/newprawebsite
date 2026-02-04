@@ -72,7 +72,7 @@ export default function BlogCommentList() {
 
               <div>
                 <h6 className="comment-author">
-                  <NextLink title={user.name} href={user.link} className="link-dark" />
+                  <NextLink href={user.link} className="link-dark">{user.name}</NextLink>
                 </h6>
 
                 <ul className="post-meta">

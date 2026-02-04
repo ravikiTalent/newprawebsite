@@ -18,11 +18,11 @@ export default function Hero5() {
 
             <div className="d-flex justify-content-center" style={slideInDownAnimate("600ms")}>
               <span style={slideInDownAnimate("900ms")}>
-                <NextLink href="#" title="Get Started" className="btn btn-primary rounded mx-1" />
+                <NextLink href="#" className="btn btn-primary rounded mx-1">Get Started</NextLink>
               </span>
 
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink href="#" title="Free Trial" className="btn btn-green rounded mx-1" />
+                <NextLink href="#" className="btn btn-green rounded mx-1">Free Trial</NextLink>
               </span>
             </div>
           </div>

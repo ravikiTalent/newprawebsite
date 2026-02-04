@@ -13,7 +13,7 @@ export default function Portfolio9() {
           </div>
 
           <div className="col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0">
-            <NextLink title="See All Projects" href="#" className="btn btn-outline-primary rounded-pill mb-0" />
+            <NextLink href="#" className="btn btn-outline-primary rounded-pill mb-0">See All Projects</NextLink>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export default function Portfolio9() {
                   felis euismod semper. Fusce dapibus tellus cursus.
                 </p>
 
-                <NextLink title="See Project" href="#" className="more hover link-violet" />
+                <NextLink href="#" className="more hover link-violet">See Project</NextLink>
               </div>
 
               <div className="col-lg-7 offset-lg-1 align-self-end">
@@ -50,7 +50,7 @@ export default function Portfolio9() {
                   Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta
                   felis euismod semper. Fusce dapibus tellus cursus.
                 </p>
-                <NextLink title="See Project" href="#" className="more hover link-blue" />
+                <NextLink href="#" className="more hover link-blue">See Project</NextLink>
               </div>
 
               <div className="col-lg-7">
@@ -72,7 +72,7 @@ export default function Portfolio9() {
                   Maecenas faucibus mollis interdum sed posuere porta consectetur cursus porta lobortis. Scelerisque id
                   ligula felis.
                 </p>
-                <NextLink title="See Project" href="#" className="more hover link-leaf mb-8" />
+                <NextLink href="#" className="more hover link-leaf mb-8">See Project</NextLink>
               </div>
 
               <img className="card-img-bottom" src="/img/photos/f3.png" srcSet="/img/photos/f3@2x.png 2x" alt="" />
@@ -88,7 +88,7 @@ export default function Portfolio9() {
                   Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta
                   felis euismod semper.
                 </p>
-                <NextLink title="See Project" href="#" className="more hover link-pink mb-8" />
+                <NextLink href="#" className="more hover link-pink mb-8">See Project</NextLink>
               </div>
 
               <img className="card-img-bottom" src="/img/photos/f4.png" srcSet="/img/photos/f4@2x.png 2x" alt="" />

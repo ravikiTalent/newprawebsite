@@ -197,7 +197,7 @@ const List = ({ title }: { title: string }) => {
         </li>
       </ul>
 
-      <NextLink title="Learn More" href="#" className="btn btn-primary mt-2" />
+      <NextLink href="#" className="btn btn-primary mt-2">Learn More</NextLink>
     </div>
   );
 };

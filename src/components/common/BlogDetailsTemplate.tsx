@@ -144,7 +144,7 @@ export default function BlogDetailsTemplate() {
                 <ul className="list-unstyled tag-list mb-0">
                   {tags.map(({ id, title, url }) => (
                     <li key={id}>
-                      <NextLink href={url} title={title} className="btn btn-soft-ash btn-sm rounded-pill mb-0" />
+                      <NextLink href={url} className="btn btn-soft-ash btn-sm rounded-pill mb-0">{title}</NextLink>
                     </li>
                   ))}
                 </ul>
@@ -170,7 +170,7 @@ export default function BlogDetailsTemplate() {
 
             <div>
               <h6>
-                <NextLink title="Nikolas Brooten" href="#" className="link-dark" />
+                <NextLink href="#" className="link-dark">Nikolas Brooten</NextLink>
               </h6>
               <span className="post-meta fs-15">Sales Manager</span>
             </div>

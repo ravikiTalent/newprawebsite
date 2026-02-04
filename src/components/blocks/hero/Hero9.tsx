@@ -32,11 +32,11 @@ export default function Hero9() {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate("1200ms")}>
-                <NextLink title="Get Started" href="#" className="btn btn-lg btn-primary rounded me-2" />
+                <NextLink href="#" className="btn btn-lg btn-primary rounded me-2">Get Started</NextLink>
               </span>
 
               <span style={slideInDownAnimate("1500ms")}>
-                <NextLink title="Free Trial" href="#" className="btn btn-lg btn-green rounded" />
+                <NextLink href="#" className="btn btn-lg btn-green rounded">Free Trial</NextLink>
               </span>
             </div>
           </div>

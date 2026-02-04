@@ -26,7 +26,7 @@ export default function Services25() {
                   </div>
                   <h3 className="fs-22">{title}</h3>
                   <p className="mb-2">{description}</p>
-                  <NextLink title="Learn More" href={linkUrl} className={`more hover link-${color}`} />
+                  <NextLink href={linkUrl} className={`more hover link-${color}`}>Learn More</NextLink>
                 </div>
               </div>
             ))}

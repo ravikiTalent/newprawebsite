@@ -28,7 +28,7 @@ export default function Portfolio17() {
                 Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta
                 felis euismod semper. Fusce dapibus tellus cursus.
               </p>
-              <NextLink title="See Project" href="#" className="btn btn-sm btn-violet btn-icon btn-icon-end mb-0" />
+              <NextLink href="#" className="btn btn-sm btn-violet btn-icon btn-icon-end mb-0">See Project</NextLink>
             </div>
 
             <div className="col-lg-7 offset-lg-1 align-self-end">
@@ -50,7 +50,7 @@ export default function Portfolio17() {
                 Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula porta
                 felis euismod semper. Fusce dapibus tellus cursus.
               </p>
-              <NextLink title="See Project" href="#" className="btn btn-sm btn-blue btn-icon btn-icon-end mb-0" />
+              <NextLink href="#" className="btn btn-sm btn-blue btn-icon btn-icon-end mb-0">See Project</NextLink>
             </div>
 
             <div className="col-lg-7">
@@ -74,7 +74,7 @@ export default function Portfolio17() {
                 felis.
               </p>
 
-              <NextLink title="See Project" href="#" className="btn btn-sm btn-leaf btn-icon btn-icon-end mb-10" />
+              <NextLink href="#" className="btn btn-sm btn-leaf btn-icon btn-icon-end mb-10">See Project</NextLink>
             </div>
 
             <img className="card-img-bottom" src="/img/photos/f3.png" srcSet="/img/photos/f3@2x.png 2x" alt="" />
@@ -92,7 +92,7 @@ export default function Portfolio17() {
                 felis.
               </p>
 
-              <NextLink title="See Project" href="#" className="btn btn-sm btn-pink btn-icon btn-icon-end mb-10" />
+              <NextLink href="#" className="btn btn-sm btn-pink btn-icon btn-icon-end mb-10">See Project</NextLink>
             </div>
 
             <img className="card-img-bottom" src="/img/photos/f4.png" srcSet="/img/photos/f4@2x.png 2x" alt="" />

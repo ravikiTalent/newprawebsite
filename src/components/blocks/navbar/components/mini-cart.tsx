@@ -65,7 +65,7 @@ export default function MiniCart() {
 
                     <div className="w-100 ms-4">
                       <h3 className="post-title fs-16 lh-xs mb-1">
-                        <NextLink title={item.title} href="/products/1" className="link-dark" />
+                        <NextLink href="/products/1" className="link-dark">{item.title}</NextLink>
                       </h3>
 
                       <p className="price fs-sm">

@@ -18,7 +18,9 @@ export default function Pricing5() {
           required!
         </p>
 
-        <NextLink title="See All Prices" href="#" className="btn btn-primary rounded-pill mt-2" />
+        <NextLink href="#" className="btn btn-primary rounded-pill mt-2">
+          See All Prices
+        </NextLink>
       </div>
 
       <div className="col-lg-7 offset-lg-1 pricing-wrapper">

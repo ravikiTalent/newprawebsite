@@ -22,7 +22,7 @@ export default function Services9() {
           blandit sit amet non magna. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque
           nisl consectetur et.
         </p>
-        <NextLink title="More Details" href="#" className="btn btn-navy rounded-pill mt-3" />
+        <NextLink href="#" className="btn btn-navy rounded-pill mt-3">More Details</NextLink>
       </div>
     </div>
   );

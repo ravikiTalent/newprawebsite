@@ -65,7 +65,7 @@ export default function CartListItem02(props: CartListItemProps) {
 
         <div className="w-100 ms-4">
           <h3 className="post-title h6 lh-xs mb-1">
-            <NextLink title={title} href="#" className="link-dark" />
+            <NextLink href="#" className="link-dark">{title}</NextLink>
           </h3>
 
           {color && <div className="small">{color}</div>}

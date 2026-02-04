@@ -48,7 +48,7 @@
 //         </form>
 
 //         <p className="text-center mt-3 mb-0">
-//           <NextLink href="/" title="Back to Login" className="hover" />
+//           <NextLink href="/" className="hover">Back to Login</NextLink>
 //         </p>
 
 //         {/* Bootstrap Modal */}

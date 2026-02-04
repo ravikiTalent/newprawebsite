@@ -143,7 +143,7 @@ const List = ({ color, title }: ListProps) => {
         </li>
       </ul>
 
-      <NextLink title="Learn More" href="#" className={`btn btn-${color} mt-2`} />
+      <NextLink href="#" className={`btn btn-${color} mt-2`}>Learn More</NextLink>
     </div>
   );
 };

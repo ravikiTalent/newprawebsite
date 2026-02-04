@@ -27,7 +27,9 @@ export default function Portfolio11() {
         </div>
 
         <div className="text-center mt-10">
-          <NextLink title="Start a Project" href="#" className="btn btn-lg btn-primary rounded-pill" />
+          <NextLink href="#" className="btn btn-lg btn-primary rounded-pill">
+            Start a Project
+          </NextLink>
         </div>
       </div>
     </section>

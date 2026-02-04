@@ -92,12 +92,12 @@ export default function LoginForm() {
       </form>
 
       <p className="mb-1">
-        <NextLink title="Forgot Password?" href="#" className="hover" />
+        <NextLink href="#" className="hover">Forgot Password?</NextLink>
       </p>{/* onClick={handleForgotPassword} */}
       {/* data-bs-toggle="modal" data-bs-target="#modal-forgotpassword" */}
 
       <p className="mb-0">
-        Don&apos;t have an account? <NextLink title="Sign up" href="#" data-bs-toggle="modal" data-bs-target="#modal-signup" className="hover" />
+        Don&apos;t have an account? <NextLink href="#" className="hover">Sign up</NextLink>
       </p>
 
       <div className="divider-icon my-4">or</div>

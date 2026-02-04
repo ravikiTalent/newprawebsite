@@ -61,7 +61,9 @@ export default function Services10() {
           Duis mollis, est non commodo luctus, nisi erat ligula.
         </p>
 
-        <NextLink title="More Details" href="#" className="btn btn-primary rounded-pill mt-3" />
+        <NextLink href="#" className="btn btn-primary rounded-pill mt-3">
+          More Details
+        </NextLink>
       </div>
     </div>
   );

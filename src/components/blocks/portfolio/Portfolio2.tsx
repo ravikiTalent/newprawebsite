@@ -25,7 +25,9 @@ export default function Portfolio2() {
             {carouselImages.map(({ id, url, image }) => (
               <figure className="rounded" key={id}>
                 <Image alt="" src={image} width={1100} height={770} className="w-100 h-auto" />
-                <NextLink title={<i className="uil uil-link" />} className="item-link" href={url} />
+                <NextLink className="item-link" href={url}>
+                  <i className="uil uil-link" />
+                </NextLink>
               </figure>
             ))}
           </Carousel>

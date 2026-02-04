@@ -31,11 +31,11 @@ export default function BlogCard3({ title, category, description, link, image }:
         <div className="card-body">
           <div className="post-header">
             <div className="post-category text-line">
-              <NextLink title={category} href="#" className="hover" />
+              <NextLink href="#" className="hover">{category}</NextLink>
             </div>
 
             <h2 className="post-title h3 mt-1 mb-3">
-              <NextLink title={title} className="link-dark" href={link} />
+              <NextLink className="link-dark" href={link}>{title}</NextLink>
             </h2>
           </div>
 

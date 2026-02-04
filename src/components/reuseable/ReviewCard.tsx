@@ -27,7 +27,7 @@ export default function ReviewCard({ createdAt, actions, user, review }: ReviewC
 
         <div>
           <h6 className="comment-author">
-            <NextLink title={user.name} href="#" className="link-dark" />
+            <NextLink href="#" className="link-dark">{user.name}</NextLink>
           </h6>
 
           <ul className="post-meta">

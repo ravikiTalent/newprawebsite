@@ -6,7 +6,7 @@ export default function Alert() {
       <div className="container">
         <div className="alert-inner p-0">
           <span className="badge badge-lg bg-white text-primary text-uppercase rounded me-2">Update</span> New version
-          of our product is finally <NextLink title="here" href="#" className="alert-link link-white hover" />!
+          of our product is finally <NextLink href="#" className="alert-link link-white hover">here</NextLink>!
         </div>
       </div>
 

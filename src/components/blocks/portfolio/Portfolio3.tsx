@@ -34,7 +34,9 @@ export default function Portfolio3() {
                 <div className="project-details d-flex justify-content-center flex-column">
                   <div className="post-header">
                     <h2 className="post-title h3">
-                      <NextLink title={title} className="link-dark" href={url} />
+                      <NextLink className="link-dark" href={url}>
+                        {title}
+                      </NextLink>
                     </h2>
                     <div className="post-category text-ash">{category}</div>
                   </div>

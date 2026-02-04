@@ -126,7 +126,7 @@ export default function RegisterForm() {
       </form>
 
       <p className="mb-0">
-        Already have an account? <NextLink title="Sign in" href="#" data-bs-toggle="modal" data-bs-target="#modal-signin" className="hover" />
+        Already have an account? <NextLink href="#" data-bs-toggle="modal" data-bs-target="#modal-signin" className="hover">Sign in</NextLink>
       </p>
 
       {/* <div className="divider-icon my-4">or</div>

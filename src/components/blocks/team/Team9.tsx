@@ -21,7 +21,7 @@ export default function Team9() {
               consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.
             </p>
 
-            <NextLink title="Read More" href="#" className="btn btn-primary" />
+            <NextLink href="#" className="btn btn-primary">Read More</NextLink>
           </div>
         </div>
       </div>

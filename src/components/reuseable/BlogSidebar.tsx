@@ -37,11 +37,11 @@ export default function BlogSidebar({ thumbnail }: BlogSidebarProps) {
         <ul className="image-list">
           {data.popularPosts.map(({ id, title, image, comment, date }) => (
             <li key={id}>
-              <NextLink title={<FigureImage width={100} height={100} className="rounded" src={image} />} href="#" />
+              <NextLink href="#"><FigureImage width={100} height={100} className="rounded" src={image} /></NextLink>
 
               <div className="post-content">
                 <h6 className="mb-2">
-                  <NextLink className="link-dark" title={title} href="#" />
+                  <NextLink className="link-dark" href="#">{title}</NextLink>
                 </h6>
 
                 <ul className="post-meta">
@@ -69,7 +69,7 @@ export default function BlogSidebar({ thumbnail }: BlogSidebarProps) {
         <ul className="unordered-list bullet-primary text-reset">
           {data.categories.map(({ id, title, post, url }) => (
             <li key={id}>
-              <NextLink title={`${title} (${post})`} href={url} />
+              <NextLink href={url}>{`${title} (${post})`}</NextLink>
             </li>
           ))}
         </ul>
@@ -82,7 +82,7 @@ export default function BlogSidebar({ thumbnail }: BlogSidebarProps) {
         <ul className="list-unstyled tag-list">
           {data.tags.map(({ id, title, url }) => (
             <li key={id}>
-              <NextLink title={title} href={url} className="btn btn-soft-ash btn-sm rounded-pill" />
+              <NextLink href={url} className="btn btn-soft-ash btn-sm rounded-pill">{title}</NextLink>
             </li>
           ))}
         </ul>
@@ -95,7 +95,7 @@ export default function BlogSidebar({ thumbnail }: BlogSidebarProps) {
         <ul className="unordered-list bullet-primary text-reset">
           {data.archieve.map(({ id, title, url }) => (
             <li key={id}>
-              <NextLink title={title} href={url} />
+              <NextLink href={url}>{title}</NextLink>
             </li>
           ))}
         </ul>

@@ -70,7 +70,7 @@ export default function ProductCard(props: ProductCardProps) {
         </div>
 
         <h2 className="post-title h3 fs-22">
-          <NextLink title={title} href="#" className="link-dark" />
+          <NextLink href="#" className="link-dark">{title}</NextLink>
         </h2>
 
         <p className="price">

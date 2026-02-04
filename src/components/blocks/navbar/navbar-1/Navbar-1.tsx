@@ -119,16 +119,13 @@ export default function NavbarOne({
       }}>
         <div className="container d-flex flex-lg-row flex-nowrap align-items-center">
           <div className="navbar-brand w-100 py-2">
-            <NextLink
-              href="/"
-              title={
-                <img
-                  alt="logo"
-                  src={`/img/logo.png`}
-                  width={100}
-                />
-              }
-            />
+            <NextLink href="/">
+              <img
+                alt="logo"
+                src={`/img/logo.png`}
+                width={100}
+              />
+            </NextLink>
           </div>
 
           <div
@@ -169,12 +166,13 @@ export default function NavbarOne({
               <div className="offcanvas-footer d-lg-none">
                 <div>
                   <NextLink
-                    title="legallens@gmail.com"
                     className="link-inverse"
                     href="mailto:first.last@email.com"
-                  />
+                  >
+                    legallens@gmail.com
+                  </NextLink>
                   <br />
-                  <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
+                  <NextLink href="tel:0123456789">00 (123) 456 78 90</NextLink>
                   <br />
                   <SocialLinks />
                 </div>

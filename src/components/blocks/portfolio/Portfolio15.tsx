@@ -60,7 +60,9 @@ export default function Portfolio15() {
       </div>
 
       <div className="text-center mt-8 mb-15 mb-md-18 mb-lg-25">
-        <NextLink href="#" title="See Our Projects" className="btn btn-lg btn-primary rounded-xl" />
+        <NextLink href="#" className="btn btn-lg btn-primary rounded-xl">
+          See Our Projects
+        </NextLink>
       </div>
     </Fragment>
   );

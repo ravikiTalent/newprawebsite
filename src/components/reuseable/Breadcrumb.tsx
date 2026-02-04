@@ -23,7 +23,7 @@ export default function Breadcrumb({ data = breadcrumb, className = "" }: Breadc
             </li>
           ) : (
             <li className="breadcrumb-item" key={id}>
-              <NextLink title={title} href={url} />
+              <NextLink href={url}>{title}</NextLink>
             </li>
           );
         })}

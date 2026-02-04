@@ -27,7 +27,7 @@ export default function BlogCard5(props: BlogCard5Props) {
       <figcaption>
         <span className="badge badge-lg bg-white text-uppercase mb-3">{category}</span>
         <h2 className="post-title h3 mt-1 mb-3">
-          <NextLink title={title} href="#" />
+          <NextLink href="#">{title}</NextLink>
         </h2>
 
         <ul className="post-meta text-white mb-0">

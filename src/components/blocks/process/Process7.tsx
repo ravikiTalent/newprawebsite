@@ -42,7 +42,7 @@ export default function Process7() {
             porta felis.
           </p>
 
-          <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mb-0" />
+          <NextLink href="#" className="btn btn-primary rounded-pill mb-0">Learn More</NextLink>
         </div>
       </div>
     </Fragment>

@@ -16,10 +16,10 @@ export default function Pricing9() {
         <h2 className="fs-16 text-uppercase text-primary mt-lg-18 mb-3">Our Pricing</h2>
         <h3 className="display-4 mb-3">We offer great and premium prices.</h3>
         <p>
-          Enjoy a <NextLink title="free 30-day trial" href="#" className="hover" /> and experience the full service. No
+          Enjoy a <NextLink href="#" className="hover">free 30-day trial</NextLink> and experience the full service. No
           credit card required!
         </p>
-        <NextLink title="See All Prices" href="#" className="btn btn-primary rounded mt-2" />
+        <NextLink href="#" className="btn btn-primary rounded mt-2">See All Prices</NextLink>
       </div>
 
       <div className="col-lg-7 offset-lg-1 pricing-wrapper">

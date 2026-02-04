@@ -89,7 +89,9 @@ const ColumnTwo = ({ title, className = "" }: ColumnTwoProps) => {
         ))}
       </ul>
 
-      <NextLink title="More Details" href="#" className="btn btn-soft-primary rounded-pill mt-2 mb-0" />
+      <NextLink href="#" className="btn btn-soft-primary rounded-pill mt-2 mb-0">
+        More Details
+      </NextLink>
     </div>
   );
 };

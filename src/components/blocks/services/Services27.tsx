@@ -35,7 +35,9 @@ export default function Services27() {
                 ligula mollis metus auctor fringilla.
               </p>
 
-              <NextLink title="More Details" href="#" className="btn btn-primary rounded-pill mt-2" />
+              <NextLink href="#" className="btn btn-primary rounded-pill mt-2">
+                More Details
+              </NextLink>
             </div>
           </div>
         </div>

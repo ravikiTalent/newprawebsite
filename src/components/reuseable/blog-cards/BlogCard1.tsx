@@ -27,7 +27,7 @@ export default function BlogCard1({ date, image, title, category }: BlogCard1Pro
 
       <div className="post-header">
         <h2 className="post-title h3 mb-3">
-          <NextLink title="Ligula tristique quis risus" className="link-dark" href="#" />
+          <NextLink className="link-dark" href="#">Ligula tristique quis risus</NextLink>
         </h2>
       </div>
 

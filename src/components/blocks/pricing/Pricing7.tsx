@@ -18,11 +18,11 @@ export default function Pricing7() {
           We offer <span className="underline">great prices</span>, premium and quality products for your business.
         </p>
         <p className="mb-5">
-          Enjoy a <NextLink title="free 30-day trial" href="#" className="hover" /> and experience the full service. No
+          Enjoy a <NextLink href="#" className="hover">free 30-day trial</NextLink> and experience the full service. No
           credit card required!
         </p>
 
-        <NextLink href="#" title="See All Prices" className="btn btn-primary rounded-pill mt-2" />
+        <NextLink href="#" className="btn btn-primary rounded-pill mt-2">See All Prices</NextLink>
       </div>
 
       <div className="col-lg-7 offset-lg-1 pricing-wrapper">

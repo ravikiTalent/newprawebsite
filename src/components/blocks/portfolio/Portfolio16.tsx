@@ -66,7 +66,7 @@ export default function Portfolio16() {
             euismod semper. Fusce dapibus tellus. Donec sed odio dui. Vivamus sagittis lacus vel.
           </p>
 
-          <NextLink title="See Project" href="#" className="btn btn-grape rounded" />
+          <NextLink href="#" className="btn btn-grape rounded">See Project</NextLink>
         </div>
       </div>
 
@@ -95,7 +95,7 @@ export default function Portfolio16() {
             euismod semper. Fusce dapibus tellus. Donec sed odio dui. Vivamus sagittis lacus vel.
           </p>
 
-          <NextLink title="See Project" href="#" className="btn btn-primary rounded" />
+          <NextLink href="#" className="btn btn-primary rounded">See Project</NextLink>
         </div>
       </div>
 
@@ -124,7 +124,7 @@ export default function Portfolio16() {
             euismod semper. Fusce dapibus tellus. Donec sed odio dui. Vivamus sagittis lacus vel.
           </p>
 
-          <NextLink title="See Project" href="#" className="btn btn-violet rounded" />
+          <NextLink href="#" className="btn btn-violet rounded">See Project</NextLink>
         </div>
       </div>
 
@@ -152,7 +152,7 @@ export default function Portfolio16() {
             euismod semper. Fusce dapibus tellus. Donec sed odio dui. Vivamus sagittis lacus vel.
           </p>
 
-          <NextLink title="See Project" href="#" className="btn btn-red rounded" />
+          <NextLink href="#" className="btn btn-red rounded">See Project</NextLink>
         </div>
       </div>
     </Fragment>

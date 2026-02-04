@@ -115,7 +115,7 @@ export default function DocLayout({
   const renderLinks = (data: Links) => {
     return data.map((item) => (
       <li key={item.title}>
-        <NextLink title={item.title} href={item.url} className={clsx({ active: pathname === item.url })} />
+        <NextLink href={item.url} className={clsx({ active: pathname === item.url })}>{item.title}</NextLink>
       </li>
     ));
   };
@@ -127,7 +127,7 @@ export default function DocLayout({
         <header className="wrapper bg-soft-primary">
           <Navbar
             language
-            button={<NextLink title="Contact" href="/contact-1" className="btn btn-sm btn-primary rounded-pill" />}
+            button={<NextLink href="/contact-1" className="btn btn-sm btn-primary rounded-pill">Contact</NextLink>}
           />
         </header>
 

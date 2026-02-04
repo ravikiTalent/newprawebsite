@@ -28,7 +28,7 @@ export default function Services32() {
               Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
 
-            <NextLink title="Learn More" href="#" className="more hover" />
+            <NextLink href="#" className="more hover">Learn More</NextLink>
           </div>
         ))}
       </div>

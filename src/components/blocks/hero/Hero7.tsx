@@ -21,11 +21,11 @@ export default function Hero7() {
 
         <div className="d-flex justify-content-center">
           <span style={slideInDownAnimate("900ms")}>
-            <NextLink href="#" title="See Projects" className="btn btn-lg btn-primary rounded-pill mx-1" />
+            <NextLink href="#" className="btn btn-lg btn-primary rounded-pill mx-1">See Projects</NextLink>
           </span>
 
           <span style={slideInDownAnimate("1200ms")}>
-            <NextLink href="#" title="Contact Us" className="btn btn-lg btn-outline-primary rounded-pill mx-1" />
+            <NextLink href="#" className="btn btn-lg btn-outline-primary rounded-pill mx-1">Contact Us</NextLink>
           </span>
         </div>
 

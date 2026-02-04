@@ -24,7 +24,7 @@ export default function Services24() {
                 </figure>
                 <h3>{title}</h3>
                 <p className="mb-2">{description}</p>
-                <NextLink title="Learn More" href="#" className="more hover" />
+                <NextLink href="#" className="more hover">Learn More</NextLink>
               </div>
             </div>
           ))}

@@ -33,7 +33,7 @@ export default function ProjectCard1(props: ProjectCard1Props) {
 
             <div className="post-content">
               <p>{description}</p>
-              <NextLink title="See Project" href={link} className="more hover link-red" />
+              <NextLink href={link} className="more hover link-red">See Project</NextLink>
             </div>
           </div>
         </div>

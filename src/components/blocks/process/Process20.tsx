@@ -42,7 +42,7 @@ export default function Process20() {
           lacinia bibendum nulla.
         </p>
 
-        <NextLink title="Learn More" href="#" className="btn btn-white rounded-xl mb-0" />
+        <NextLink href="#" className="btn btn-white rounded-xl mb-0">Learn More</NextLink>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ export default function Services33() {
             </li>
           </ul>
 
-          <NextLink title="Learn More" href="#" className="more hover link-primary" />
+          <NextLink href="#" className="more hover link-primary">Learn More</NextLink>
         </div>
       </div>
 
@@ -108,7 +108,7 @@ export default function Services33() {
             </li>
           </ul>
 
-          <NextLink title="Learn More" href="#" className="more hover link-green" />
+          <NextLink href="#" className="more hover link-green">Learn More</NextLink>
         </div>
       </div>
 
@@ -153,7 +153,7 @@ export default function Services33() {
             </li>
           </ul>
 
-          <NextLink title="Learn More" href="#" className="more hover link-fuchsia" />
+          <NextLink href="#" className="more hover link-fuchsia">Learn More</NextLink>
         </div>
       </div>
     </Fragment>

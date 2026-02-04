@@ -27,7 +27,9 @@ export default function Process14() {
               Aenean lacinia bibendum nulla sed consectetur.
             </p>
 
-            <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mb-0" />
+            <NextLink href="#" className="btn btn-primary rounded-pill mb-0">
+              Learn More
+            </NextLink>
           </div>
         </div>
       </div>

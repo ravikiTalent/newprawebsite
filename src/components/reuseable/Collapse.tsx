@@ -29,7 +29,7 @@ export default function Collapse({ id, total, title, expanded, items }: Collapse
         <ul className="btn-toggle-nav list-unstyled ps-2">
           {items.map(({ title, url }, id) => (
             <li key={id}>
-              <NextLink title={title} href={url} className="link-body" />
+              <NextLink href={url} className="link-body">{title}</NextLink>
             </li>
           ))}
         </ul>

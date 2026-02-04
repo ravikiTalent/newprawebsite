@@ -13,7 +13,7 @@ export default function Pagination({ altStyle = false, className = "justify-cont
     <nav className={`d-flex ${className}`} aria-label="pagination">
       <ul className={clsx({ pagination: true, "pagination-alt": altStyle })}>
         <li className="page-item disabled">
-          <NextLink href="#" className="page-link" title={<i className="uil uil-arrow-left" />} />
+          <NextLink href="#" className="page-link"><i className="uil uil-arrow-left" /></NextLink>
         </li>
 
         {[1, 2, 3].map((item, i) => (
@@ -23,7 +23,7 @@ export default function Pagination({ altStyle = false, className = "justify-cont
         ))}
 
         <li className="page-item">
-          <NextLink href="#" className="page-link" title={<i className="uil uil-arrow-right" />} />
+          <NextLink href="#" className="page-link"><i className="uil uil-arrow-right" /></NextLink>
         </li>
       </ul>
     </nav>
