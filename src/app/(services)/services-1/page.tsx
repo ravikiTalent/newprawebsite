@@ -6,10 +6,19 @@ import { Pricing1 } from "components/blocks/pricing";
 import { Contact3 } from "components/blocks/contact";
 import { Process6 } from "components/blocks/process";
 import { Services8 } from "components/blocks/services";
+import CompanyRegistrationSteps from "components/blocks/process/CompanyRegistrationSteps";
+import BenefitsPrivateLimited from "components/blocks/process/BenefitsPrivateLimited";
+import ChecklistPrivateLimited from "components/blocks/process/ChecklistPrivateLimited";
 
 export default function Services() {
   return (
     <Fragment>
+      {/* ========== company registration steps section ========== */}
+      <CompanyRegistrationSteps />
+      {/* ========== checklist for private limited section ========== */}
+      <ChecklistPrivateLimited />
+      {/* ========== benefits of private limited section ========== */}
+      <BenefitsPrivateLimited />
       {/* ========== page title section ========== */}
       <section className="wrapper bg-soft-primary">
         <div className="container pt-10 pb-19 pt-md-14 pb-md-20 text-center">

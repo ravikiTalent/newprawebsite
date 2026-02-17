@@ -10,6 +10,9 @@ import { Contact7 } from "components/blocks/contact";
 import { CTA5 } from "components/blocks/call-to-action";
 import { Testimonial5 } from "components/blocks/testimonial";
 import { Services1 } from "components/blocks/services";
+import CompanyRegistrationSteps from "components/blocks/process/CompanyRegistrationSteps";
+import BenefitsPrivateLimited from "components/blocks/process/BenefitsPrivateLimited";
+import ChecklistPrivateLimited from "components/blocks/process/ChecklistPrivateLimited";
 import StartBusinessIndiaSection from "components/blocks/home/StartBusinessIndiaSection";
 import ComplianceSolutionSection from "components/blocks/home/ComplianceSolutionSection";
 import NextLink from "components/reuseable/links/NextLink";
@@ -24,6 +27,14 @@ export default function Demo15() {
         {/* ========== hero sections ========== */}
 
         <Hero15 />
+        {/* ========== company registration steps section ========== */}
+        <CompanyRegistrationSteps />
+
+        {/* ========== benefits of private limited section ========== */}
+        <BenefitsPrivateLimited />
+        {/* ========== checklist for private limited section ========== */}
+        <ChecklistPrivateLimited />
+        
         <Services1 />
 
         <section className="pt-12 pb-5">
@@ -38,7 +49,9 @@ export default function Demo15() {
                         <tbody>
                           <tr>
                             <td>
-                              <NextLink href="#" className="hover me-4 mb-5">Link example</NextLink>
+                              <NextLink href="#" className="hover me-4 mb-5">
+                                Link example
+                              </NextLink>
                               <span className="mb-0 d-block">
                                 Published On: <strong>01012025</strong>
                               </span>
@@ -46,7 +59,9 @@ export default function Demo15() {
                           </tr>
                           <tr>
                             <td>
-                              <NextLink href="#" className="hover me-4 mb-5">Link example</NextLink>
+                              <NextLink href="#" className="hover me-4 mb-5">
+                                Link example
+                              </NextLink>
                               <span className="mb-0 d-block">
                                 Published On: <strong>01012025</strong>
                               </span>
@@ -94,32 +109,8 @@ export default function Demo15() {
             </div>
           </div>
         </section>
-        <StartBusinessIndiaSection />
-        <ComplianceSolutionSection />
-        {/* <section className="wrapper bg-light angled lower-end">
-          <div className="container py-14 py-md-16"> */}
-        {/* ========== about section ========== */}
-        {/* <About6 /> */}
-
-        {/* ========== process section ========== */}
-        {/* <Process7 /> */}
-        {/* </div>
-        </section> */}
-
-        {/* ========== testimonial section ========== */}
-        {/* <Testimonial5 /> */}
-
-        {/* ========== team section ========== */}
-        {/* <Team3 /> */}
-
-        {/* ========== facts section ========== */}
-        {/* <Facts5 /> */}
-
-        {/* ========== contact section ========== */}
-        {/* <Contact7 /> */}
-
-        {/* ========== call to action section ========== */}
-        {/* <CTA5 /> */}
+  
+        
 
         <ReadyToGetStartedSection />
       </main>

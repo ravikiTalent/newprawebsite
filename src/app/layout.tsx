@@ -25,6 +25,7 @@ import "assets/scss/style.scss";
 import Topbar from "components/elements/Topbar";
 import Navbar from "components/blocks/navbar/navbar-1/Navbar-1";
 import Footer9 from "components/blocks/footer/Footer9";
+import TawkToChat from "components/TawkToChat";
 
 const manrope = Manrope({
   subsets: ["latin"]
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
               />
             </header>
             <ThemeProvider>{children}</ThemeProvider>
+            <TawkToChat />
             <Footer9 />
           </CartProvider>
         </AuthProvider>

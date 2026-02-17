@@ -1,7 +1,7 @@
 .floatingButton {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: white;
   border: none;
@@ -31,7 +31,7 @@
 .modalOverlay {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   width: 100%;
   max-width: 420px;
   z-index: 9999;
@@ -442,7 +442,7 @@
 @media (max-width: 480px) {
   .modalOverlay {
     bottom: 10px;
-    right: 10px;
+    left: 10px;
     max-width: calc(100% - 20px);
   }
 
@@ -461,7 +461,7 @@
 
   .floatingButton {
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     padding: 12px 16px;
     font-size: 12px;
   }
