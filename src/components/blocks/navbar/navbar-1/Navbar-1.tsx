@@ -33,6 +33,7 @@ import MCANav from "../components/mca";
 import GlobalNav from "../components/global";
 
 // ===================================================================
+import { ReactNode } from "react";
 interface NavbarProps {
   info?: boolean;
   cart?: boolean;
@@ -43,7 +44,7 @@ interface NavbarProps {
   language?: boolean;
   stickyBox?: boolean;
   navClassName?: string;
-  button?: ReactElement;
+  button?: ReactNode;
   navOtherClass?: string;
 }
 // ===================================================================
