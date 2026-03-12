@@ -6,7 +6,7 @@ const steps = [
   {
     number: "01",
     title: "Fill up the forms",
-    img: "/img/home/Login.png",
+    img: "/img/home/hand-drawn-essay-illustration.png",
   },
   {
     number: "02",
