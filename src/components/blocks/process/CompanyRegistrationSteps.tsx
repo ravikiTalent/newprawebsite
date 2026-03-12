@@ -21,7 +21,7 @@ const steps = [
   {
     number: "04",
     title: "Get your Company Registered",
-    img: "/img/home/Submit.webp",
+    img: "/img/home/Company-Registered.png",
   },
 ];
 

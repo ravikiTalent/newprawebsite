@@ -12,11 +12,11 @@ const benefits = [
     text: "Better image and credibility in Market",
   },
   {
-    img: "/img/home/icon8.png",
+    img: "/img/home/loan-buss.png",
     text: "Easy to raise fund,capital and loans",
   },
   {
-    img: "/img/home/icon9.png",
+    img: "/img/home/business-strategy-plans.png",
     text: "Favorite Business structure for Investors",
   },
   {
@@ -24,7 +24,7 @@ const benefits = [
     text: "Easy to attract Employees and workers",
   },
   {
-    img: "/img/home/icon11.png",
+    img: "/img/home/business-deal.png",
     text: "Quite easy to sell and deal with",
   },
 ];
