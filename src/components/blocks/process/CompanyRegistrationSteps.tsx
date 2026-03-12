@@ -16,7 +16,7 @@ const steps = [
   {
     number: "03",
     title: "Pay Fees",
-    img: "/img/home/Wallet.webp",
+    img: "/img/home/payfee.png",
   },
   {
     number: "04",
