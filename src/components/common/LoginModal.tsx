@@ -9,12 +9,6 @@ interface LoginModalProps {
 
 export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
   const [isLogin, setIsLogin] = useState(true);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    password: "",
-  });
   const [error, setError] = useState("");
   const { login, register } = useAuth();
 
@@ -25,35 +19,10 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
     setError("");
 
     if (isLogin) {
-      const success = await login(formData.email, formData.password);
-      if (success) {
-        onClose();
-        setFormData({ name: "", email: "", phone: "", password: "" });
-      } else {
-        setError("Invalid email or password");
-      }
+      login(); // Kinde handles the login flow
     } else {
-      if (!formData.name || !formData.email || !formData.password) {
-        setError("Please fill all required fields");
-        return;
-      }
-      const success = await register(
-        formData.name,
-        formData.email,
-        formData.phone,
-        formData.password
-      );
-      if (success) {
-        onClose();
-        setFormData({ name: "", email: "", phone: "", password: "" });
-      } else {
-        setError("Email already exists");
-      }
+      register(); // Kinde handles the registration flow
     }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -76,58 +45,10 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
             ></button>
           </div>
           <div className="modal-body">
+            <p className="text-center mb-4">
+              {isLogin ? "Sign in with Kinde" : "Sign up with Kinde"}
+            </p>
             <form onSubmit={handleSubmit}>
-              {!isLogin && (
-                <div className="mb-3">
-                  <label className="form-label">Name *</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required={!isLogin}
-                  />
-                </div>
-              )}
-
-              <div className="mb-3">
-                <label className="form-label">Email *</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              {!isLogin && (
-                <div className="mb-3">
-                  <label className="form-label">Phone Number</label>
-                  <input
-                    type="tel"
-                    className="form-control"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                  />
-                </div>
-              )}
-
-              <div className="mb-3">
-                <label className="form-label">Password *</label>
-                <input
-                  type="password"
-                  className="form-control"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
               {error && (
                 <div className="alert alert-danger" role="alert">
                   {error}
@@ -135,7 +56,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
               )}
 
               <button type="submit" className="btn btn-primary w-100 mb-3">
-                {isLogin ? "Login" : "Register"}
+                {isLogin ? "Login with Kinde" : "Register with Kinde"}
               </button>
 
               <div className="text-center">

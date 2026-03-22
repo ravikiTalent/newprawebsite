@@ -36,15 +36,7 @@ export default function LoginForm() {
 
   const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const success = await login(email, password);
-    if (success) {
-      setMessage("Logged in successfully!");
-      setError("");
-      // handleCloseModal();
-    } else {
-      setError("Invalid email or password.");
-      setMessage("");
-    }
+    login(); // Kinde handles the login flow
   };
 
   // Remove Google login and forgot password logic for local-only auth
@@ -52,78 +44,20 @@ export default function LoginForm() {
   return (
     <Fragment>
       <h2 className="mb-3 text-start">Welcome</h2>
-      <p className="lead mb-6 text-start">Fill your email and password to sign in.</p>
+      <p className="lead mb-6 text-start">Sign in with Kinde.</p>
 
       <form onSubmit={handleLogin} className="text-start mb-3">
-        {/* {error && <p className="text-red-500">{error}</p>} */}
-        <div className="form-floating mb-4">
-          <input
-            type="email"
-            value={email}
-            id="loginEmail"
-            placeholder="Email"
-            className="form-control"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label htmlFor="loginEmail">Email</label>
-        </div>
-
-        <div className="form-floating password-field mb-4">
-          <input
-            value={password}
-            id="loginPassword"
-            placeholder="Password"
-            className="form-control"
-            type={visiblePassword ? "text" : "password"}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <span className="password-toggle" onClick={() => setVisiblePassword(!visiblePassword)}>
-            <i className={`uil  ${visiblePassword ? "uil-eye-slash" : "uil-eye"}`} />
-          </span>
-
-          <label htmlFor="loginPassword">Password</label>
-        </div>
-
-        {error && <p className="text-red-500">{error}</p>}
-
-        <button type="submit" className="btn btn-primary rounded-pill btn-login w-100 mb-2" data-bs-dismiss="modal">
-          Sign In
+        <button type="submit" className="btn btn-primary rounded-pill btn-login w-100 mb-2">
+          Sign In with Kinde
         </button>
       </form>
 
-      <p className="mb-1">
-        <NextLink href="#" className="hover">Forgot Password?</NextLink>
-      </p>{/* onClick={handleForgotPassword} */}
-      {/* data-bs-toggle="modal" data-bs-target="#modal-forgotpassword" */}
-
       <p className="mb-0">
-        Don&apos;t have an account? <NextLink href="#" className="hover">Sign up</NextLink>
+        Don&apos;t have an account?{" "}
+        <NextLink href="#" data-bs-toggle="modal" data-bs-target="#modal-signup" className="hover">
+          Sign up
+        </NextLink>
       </p>
-
-      <div className="divider-icon my-4">or</div>
-
-      <nav className="nav social justify-content-center text-center">
-        <a href="#" className="btn btn-circle btn-sm btn-google" data-bs-dismiss="modal">
-          <i className="uil uil-google" />
-        </a>
-
-        {/* <a href="#" target="__blank" className="btn btn-circle btn-sm btn-facebook-f">
-          <i className="uil uil-facebook-f" />
-        </a>
-
-        <a href="#" target="__blank" className="btn btn-circle btn-sm btn-twitter">
-          <i className="uil uil-twitter" />
-        </a> */}
-      </nav>
-      
-    </Fragment>
-  );
-
-  return (
-    <Fragment>
-      {/* ============= signup modal ============= */}
-            <Signup />
-            <Forgotpassword />
     </Fragment>
   );
 }

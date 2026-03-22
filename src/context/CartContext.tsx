@@ -29,7 +29,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Load cart from localStorage when user changes
   useEffect(() => {
-    if (user) {
+    if (user?.id) {
       const savedCart = localStorage.getItem(`cart_${user.id}`);
       if (savedCart) {
         setCartList(JSON.parse(savedCart));
@@ -43,7 +43,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Save cart to localStorage whenever it changes
   useEffect(() => {
-    if (user && cartList.length >= 0) {
+    if (user?.id && cartList.length >= 0) {
       localStorage.setItem(`cart_${user.id}`, JSON.stringify(cartList));
     }
   }, [cartList, user]);
@@ -101,7 +101,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const clearCart = () => {
     setCartList([]);
-    if (user) {
+    if (user?.id) {
       localStorage.removeItem(`cart_${user.id}`);
     }
   };
