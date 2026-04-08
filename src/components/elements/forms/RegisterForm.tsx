@@ -2,21 +2,20 @@
 
 import { FormEvent, Fragment, useState } from "react";
 import NextLink from "components/reuseable/links/NextLink";
-import { useAuth } from "context/AuthContext";
+
 
 export default function RegisterForm() {
-  const { register } = useAuth();
-
   const handleSignup = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    register(); // Kinde handles the registration flow
+    // TODO: Implement registration logic or integrate with your auth provider
+    alert("Registration functionality is not implemented.");
   };
 
   return (
     <Fragment>
       <form onSubmit={handleSignup} className="text-start mb-3">
         <button type="submit" className="btn btn-primary rounded-pill btn-login w-100 mb-2">
-          Sign Up with Kinde
+          Sign Up
         </button>
       </form>
 

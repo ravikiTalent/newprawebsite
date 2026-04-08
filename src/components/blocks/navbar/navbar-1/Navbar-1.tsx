@@ -13,7 +13,7 @@ import Info from "../components/Info";
 import Search from "../components/search";
 import Signin from "../components/signin";
 import Signup from "../components/signup";
-import MiniCart from "../components/mini-cart";
+
 import HeaderRight from "../components/header-right";
 import FancyHeader from "../components/fancy-header";
 import { usePathname } from "next/navigation";
@@ -36,7 +36,7 @@ import GlobalNav from "../components/global";
 import { ReactNode } from "react";
 interface NavbarProps {
   info?: boolean;
-  cart?: boolean;
+  cart?: boolean; // cart removed
   fancy?: boolean;
   logoAlt?: string;
   search?: boolean;
@@ -276,8 +276,7 @@ export default function NavbarOne({
       {/* ============= show search box ============= */}
       {search && <Search />}
 
-      {/* ============= cart sidebar ============= */}
-      {cart && <MiniCart />}
+      {/* cart sidebar removed */}
     </Fragment>
   );
 }

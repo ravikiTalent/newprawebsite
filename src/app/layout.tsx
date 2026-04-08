@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 import { Manrope } from "next/font/google";
 
-import { Providers } from "components/providers";
+import Providers from "components/providers";
 
 // ANIMATE CSS
 import "animate.css";

@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 // -------- PARTIAL LOCAL COMPONENTS -------- //
 import Social from "./social";
 import Language from "./language";
-import { useCart } from "context/CartContext";
+
 
 // ===================================================================
 interface HeaderRightProps {
@@ -18,7 +18,7 @@ interface HeaderRightProps {
 // ===================================================================
 
 export default function HeaderRight({ info, cart, button, social, search, language, navOtherClass }: HeaderRightProps) {
-  const { cartList } = useCart();
+
   
   return (
     <div className={navOtherClass}>
@@ -48,19 +48,7 @@ export default function HeaderRight({ info, cart, button, social, search, langua
         {button ? <li className="nav-item d-none d-md-block">{button}</li> : null}
 
         {/* ============= shopping cart button ============= */}
-        {cart ? (
-          <li className="nav-item">
-            <a
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvas-cart"
-              className="nav-link position-relative d-flex flex-row align-items-center">
-              <i className="uil uil-shopping-cart" />
-              {cartList.length > 0 && (
-                <span className="badge badge-cart bg-primary">{cartList.length}</span>
-              )}
-            </a>
-          </li>
-        ) : null}
+        {/* cart button removed */}
 
         {/* ============= social icons link ============= */}
         {social ? <Social /> : null}

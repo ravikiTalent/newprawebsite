@@ -3,11 +3,11 @@
 import { FormEvent, Fragment, useState } from "react";
 import NextLink from "components/reuseable/links/NextLink";
 import Signup from "components/blocks/navbar/components/signup";
-import { useAuth } from "context/AuthContext";
+
 import Forgotpassword from "components/blocks/navbar/components/forgotpassword";
 
 export default function LoginForm() {
-  const { login } = useAuth();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [visiblePassword, setVisiblePassword] = useState(false);
@@ -34,9 +34,11 @@ export default function LoginForm() {
     document.querySelectorAll(".modal-open").forEach(el => el.classList.add("overflow-y-auto", "p-0"));
 }
 
+
   const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    login(); // Kinde handles the login flow
+    // TODO: Implement login logic or integrate with your auth provider
+    setError("Login functionality is not implemented.");
   };
 
   // Remove Google login and forgot password logic for local-only auth
