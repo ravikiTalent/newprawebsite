@@ -11,23 +11,26 @@ import { useCart } from "context/CartContext";
 // =============================================================
 interface CartListItemProps {
   id: string;
-  title: string;
+  title?: string;
+  name?: string;
   image: string;
   size?: number;
   color?: string;
   quantity: number;
-  salePrice: number;
-  regularPrice: number;
+  salePrice?: number;
+  regularPrice?: number;
 }
 // =============================================================
 
 export default function CartListItem02(props: CartListItemProps) {
-  const { id, title, image, size, color, salePrice, regularPrice } = props;
+  const { id, title, name, image, size, color, salePrice, regularPrice } = props;
+  const itemTitle = title || name || 'Product';
+  const price = salePrice || regularPrice || 0;
   const [quantity, setQuantity] = useState(props.quantity);
   const { removeItem } = useCart();
   // const { removeItem } = useShoppingCart();
 
-  const total = +quantity * (salePrice || regularPrice);
+  const total = +quantity * price;
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
@@ -65,7 +68,7 @@ export default function CartListItem02(props: CartListItemProps) {
 
         <div className="w-100 ms-4">
           <h3 className="post-title h6 lh-xs mb-1">
-            <NextLink href="#" className="link-dark">{title}</NextLink>
+            <NextLink href="#" className="link-dark">{itemTitle}</NextLink>
           </h3>
 
           {color && <div className="small">{color}</div>}
