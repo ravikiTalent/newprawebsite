@@ -1,0 +1,61 @@
+# Nginx configuration for Hostinger VPS
+# Place this in /etc/nginx/sites-available/legallens
+# Then: sudo ln -s /etc/nginx/sites-available/legallens /etc/nginx/sites-enabled/
+
+upstream legallens_app {
+    server 127.0.0.1:3000;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name yourdomain.com www.yourdomain.com;
+
+    # Redirect HTTP to HTTPS
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name yourdomain.com www.yourdomain.com;
+
+    # SSL Certificates (via Certbot)
+    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+
+    # Security headers
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    # Gzip compression
+    gzip on;
+    gzip_types text/plain text/css application/json application/javascript;
+    gzip_min_length 1000;
+
+    # Cache static assets
+    location /_next/static {
+        cache_control "public, max-age=31536000, immutable";
+        proxy_pass http://legallens_app;
+    }
+
+    location /public {
+        cache_control "public, max-age=31536000, immutable";
+        root /home/legallens;
+    }
+
+    # Proxy API and dynamic requests
+    location / {
+        proxy_pass http://legallens_app;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
